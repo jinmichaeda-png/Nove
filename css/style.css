@@ -1,0 +1,1496 @@
+@charset "utf-8";
+
+/* webfont */
+/* 웹폰트없으면 지우세요!!! */
+html,
+body,
+div,
+span,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+em,
+img,
+small,
+strong,
+b,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tr,
+th,
+td,
+article,
+aside,
+footer,
+header,
+nav,
+section,
+summary,
+video,
+* {
+    padding: 0;
+    margin: 0;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+html {
+    /* Prevent font scaling in landscape */
+
+    -webkit-text-size-adjust: none;
+    /*Chrome, Safari, newer versions of Opera*/
+
+    -moz-text-size-adjust: none;
+    /*Firefox*/
+
+    -ms-text-size-adjust: none;
+    /*Ie*/
+
+    -o-text-size-adjust: none;
+    /*old versions of Opera*/
+}
+
+body {
+    font-family: 'Pretendard';
+    font-size: 20px;
+    line-height: 1.5;
+    color: #584539;
+    background-color: #FFFDF8;
+}
+
+#wrap {
+    min-width: 1360px;
+}
+
+
+
+/* ============================================================
+header 
+============================================================ */
+#header_wrap {
+    width: 100%;
+    height: 80px;
+    font-weight: bold;
+    background-color: #F8F1E5;
+    text-align: center;
+}
+
+.header {
+    width: 1320px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav_wrap {
+    display: flex;
+}
+
+.logo {
+    margin-top: 16px;
+}
+
+.logo a img {
+    display: block;
+}
+
+.nav {
+    margin-left: 70px;
+}
+
+.gnb {
+    display: flex;
+}
+
+.gnb li {
+    margin: 25px;
+}
+
+.util {
+    display: flex;
+    margin-top: 25px;
+}
+
+.util li a img {
+    margin-left: 10px;
+}
+
+.util li.shopper {
+    position: relative;
+}
+
+.util li.shopper::after {
+    content: "(0)";
+    font-size: 12px;
+    font-weight: 400;
+
+    position: absolute;
+}
+
+
+
+/* ============================================================
+main_banner 
+============================================================ */
+#slide1 .swiper {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 50px;
+}
+
+#slide1 .swiper-slide {
+    font-size: 18px;
+    background: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#slide1 .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* 페이지 버튼 불릿 색상 바꾸기 */
+#slide1 .swiper-pagination-bullet-active {
+    width: 40px;
+    border-radius: 5px;
+    background-color: #584539;
+    transition: all 0.5s;
+}
+
+.swiper-slide {
+    position: relative;
+}
+
+.text_box {
+    width: 1320px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.banner_tit {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.banner_txt {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.banner_btn {
+    font-size: 16px;
+    display: inline-block;
+    border: 1px solid #584539;
+    border-radius: 30px;
+    padding: 5px 30px;
+}
+
+
+
+/* ============================================================
+   BRAND
+============================================================ */
+#brand {
+    width: 1320px;
+    /* height: 870px; */
+    margin: 0 auto;
+}
+
+
+/* 브랜드 소개 문구 */
+
+.brand_intro {
+    margin: 100px 0 40px;
+
+    text-align: center;
+
+    font-family: 'Gelasio', serif;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #333;
+}
+
+.brand_intro strong {
+    font-family: 'Pretendard', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+/* 브랜드 이미지 전체 */
+
+.brand_img {
+    width: 100%;
+    display: flex;
+
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+
+/* 각각의 이미지 영역 */
+
+.brand_img li {
+    width: calc(100% / 3);
+    position: relative;
+    overflow: hidden;
+}
+
+.brand_img li img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* 호버 이미지 */
+.brand_img li .img_hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+/* 기본 이미지도 자연스럽게 사라지도록 */
+.brand_img li .img_default {
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+}
+
+/* 호버 */
+.brand_img li:hover .img_default {
+    opacity: 0;
+}
+
+.brand_img li:hover .img_hover {
+    opacity: 1;
+}
+
+
+/* 제목 */
+
+.brand_title {
+    color: #FFFDF8;
+    position: absolute;
+
+    top: 20%;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    margin: 0;
+
+    text-align: center;
+
+    white-space: nowrap;
+
+    z-index: 2;
+}
+
+
+/* Honest / Mild / Trust */
+
+.brand_eng {
+    font-family: 'Gelasio', serif;
+
+    font-size: 44px;
+    font-weight: 600;
+    font-style: italic;
+}
+
+
+/* Nove */
+
+.brand_nove {
+    font-family: 'Gelasio', serif;
+
+    font-size: 30px;
+    font-weight: 600;
+    font-style: italic;
+}
+
+
+/* 의 기준 / 의 방식 / 의 완성 */
+
+.brand_kor {
+    font-family: 'Pretendard', sans-serif;
+
+    font-size: 30px;
+    font-weight: 600;
+    font-style: normal;
+}
+
+
+/* 호버 세로선 */
+
+.brand_line {
+    position: absolute;
+
+    top: 41%;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    width: 1px;
+    height: 140px;
+
+    background: #fff;
+
+    opacity: 0;
+
+    z-index: 2;
+
+    transition: opacity 1s ease;
+}
+
+
+/* 호버 설명 */
+
+.brand_hover {
+    position: absolute;
+
+    top: 67%;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    width: 90%;
+
+    margin: 0;
+
+    text-align: center;
+
+    white-space: nowrap;
+
+    font-family: 'Pretendard', sans-serif;
+
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.5;
+
+    color: #FFFDF8;
+
+    opacity: 0;
+
+    z-index: 2;
+
+    transition: opacity 1s ease;
+}
+
+
+/* 호버 시 선 + 설명 */
+
+.brand_img li:hover .brand_line,
+.brand_img li:hover .brand_hover {
+    opacity: 1;
+}
+
+
+
+
+
+
+/* ============================================================
+   BEST ITEM
+============================================================ */
+
+#best {
+    width: 1320px;
+    margin: 0 auto;
+}
+
+
+/* 섹션 제목 */
+
+#best .title {
+    margin: 100px 0 40px;
+
+    text-align: center;
+
+    font-family: 'Pretendard', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+
+/* 상품 리스트 */
+
+.best_list {
+    width: 100%;
+    display: flex;
+    gap: 16px;
+
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+.best_item {
+    flex: 1;
+    min-width: 0;
+}
+
+
+/* 링크 */
+
+.best_item a {
+    display: block;
+
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* 상품 이미지 영역 */
+
+.best_img {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.best_img img {
+    display: block;
+
+    width: 100%;
+    height: auto;
+
+
+}
+
+
+/* 상품 정보 */
+
+.best_info {
+    margin-top: 20px;
+}
+
+
+/* 상품명 */
+
+.best_name {
+    margin: 0 0 6px;
+
+    font-family: 'Pretendard', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #333;
+}
+
+
+/* 가격 */
+
+.best_price {
+    display: flex;
+    align-items: flex-end;
+    gap: 5px;
+
+    margin: 0;
+
+    font-family: 'Pretendard', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+
+/* 원래 가격 */
+
+.best_price .original_price {
+    font-size: 12px;
+    font-weight: 400;
+    color: #777;
+}
+
+
+/* 판매 가격 */
+
+.best_price strong {
+    font-weight: 600;
+    color: #584539;
+}
+
+
+
+/* ============================================================
+ line_banner 
+ =========================================================== */
+#banner {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    background-color: #584539;
+    overflow: hidden;
+    margin-top: 100px;
+}
+
+#banner .swiper {
+    width: 100%;
+    height: 100%;
+}
+
+#banner .swiper-wrapper {
+    display: flex;
+    align-items: center;
+    transition-timing-function: linear !important;
+}
+
+#banner .swiper-slide {
+    width: auto !important;
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+
+    white-space: nowrap;
+
+    font-family: 'Gelasio', serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 44px;
+    color: #FFFDF8;
+}
+
+
+
+
+/* ============================================================
+ event 
+ =========================================================== */
+
+#event {
+    width: 1320px;
+    margin: 0 auto 100px;
+}
+
+#event .title {
+    margin: 100px 0 40px;
+
+    text-align: center;
+
+    font-family: 'Pretendard', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.event_list {
+    display: flex;
+    gap: 40px;
+
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+.event_item {
+    flex: 1;
+    min-width: 0;
+    text-align: center;
+}
+
+.event_item a {
+    display: block;
+
+    text-decoration: none;
+    color: inherit;
+}
+
+.event_img {
+    width: 100%;
+    overflow: hidden;
+}
+
+.event_img img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+.event_info {
+    margin-top: 20px;
+}
+
+.event_name {
+    margin: 0 0 8px;
+
+    font-family: 'Pretendard', sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    color: #333;
+}
+
+.event_benefit {
+    margin: 0;
+
+    font-family: 'Pretendard', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #777;
+}
+
+
+/* ==========================================================
+ review
+============================================================ */
+#review {
+    position: relative;
+
+    height: calc(300vh + 100px);
+
+    background: #fffdf8;
+
+    box-sizing: border-box;
+}
+
+
+/* STICKY */
+
+.review_sticky {
+    position: sticky;
+    top: 40px;
+
+    width: 100%;
+    height: 860px;
+
+    overflow: hidden;
+}
+
+
+/* BACKGROUND IMAGE */
+
+.review_bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 860px;
+
+    z-index: 1;
+
+    overflow: hidden;
+}
+
+.review_bg img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: center center;
+}
+
+
+/* REVIEW TITLE */
+
+.review_title {
+    position: absolute;
+
+    top: 65%;
+    left: 25%;
+
+    margin: 0;
+
+    transform: translate(-50%, -50%);
+
+    z-index: 2;
+
+    white-space: nowrap;
+
+    font-family: "Gelasio", serif;
+    font-size: 150px;
+    font-weight: 700;
+    line-height: 1;
+
+    color: transparent;
+
+    -webkit-text-stroke: 2px #584539;
+}
+
+
+/* REVIEW - R */
+
+.review_r {
+    font-family: "Gelasio", serif;
+
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+/* REVIEW - eview */
+
+.review_eview {
+    font-family: "Gelasio", serif;
+
+    font-weight: 700;
+    font-style: italic;
+}
+
+
+/* AOS MOTION WRAPPER */
+
+.review_motion {
+    position: absolute;
+
+    top: 0;
+
+    width: 430px;
+    height: 100%;
+
+    z-index: 4;
+}
+
+
+/* 왼쪽 리뷰 */
+
+.review_motion_left {
+    left: 740px;
+}
+
+
+/* 오른쪽 리뷰 */
+
+.review_motion_right {
+    left: 1200px;
+}
+
+
+/* REVIEW COLUMN */
+
+.review_column {
+    position: absolute;
+
+    top: 0;
+
+    width: 430px;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 30px;
+
+    will-change: transform;
+}
+
+
+/* REVIEW CARD */
+
+.review_card {
+    flex: 0 0 620px;
+
+    width: 430px;
+    height: 600px;
+
+    box-sizing: border-box;
+
+    padding: 20px;
+
+    /* #fffdf8 50% */
+    background: rgba(255, 253, 248, 0.5);
+
+    /* 테두리 */
+    border: 1px solid rgba(255, 253, 248, 0.8);
+
+    /* #584539 30% 그림자 */
+    box-shadow:
+        0 8px 25px rgba(88, 69, 57, 0.3);
+
+    /* 뒤 배경이 너무 흐려지지 않도록 */
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+}
+
+
+/* REVIEW IMAGE */
+
+.review_card > img {
+    display: block;
+
+    width: 390px;
+    height: 390px;
+
+    object-fit: cover;
+}
+
+
+/* REVIEW TEXT */
+
+.review_info {
+    margin-top: 17px;
+}
+
+
+/* STAR / Pretendard Bold / 14px */
+
+.review_star {
+    display: block;
+
+    margin: 0 0 11px;
+
+    font-family: "Pretendard", sans-serif;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    line-height: 1.2;
+
+    color: #584539;
+}
+
+
+/* PRODUCT NAME / Pretendard SemiBold / 22px */
+
+.review_info strong {
+    display: block;
+
+    margin: 0 0 11px;
+
+    font-family: "Pretendard", sans-serif;
+
+    font-size: 22px;
+    font-weight: 600;
+
+    line-height: 1.4;
+
+    color: #584539;
+}
+
+
+/* REVIEW DESCRIPTION / Pretendard Regular / 16px */
+
+.review_info p {
+    margin: 0;
+
+    font-family: "Pretendard", sans-serif;
+
+    font-size: 16px;
+    font-weight: 400;
+
+    line-height: 24px;
+
+    color: #584539;
+}
+
+
+
+
+
+
+/* ===========================================================
+ insta
+ ========================================================== */
+#instagram {
+    width: 100%;
+    height: 850px;
+    overflow: hidden;
+    position: relative;
+}
+#instagram .title {
+    margin: 100px 0 40px;
+
+    text-align: center;
+
+    font-family: 'Pretendard', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.instagram_wrap {
+    width: 100%;
+    overflow: hidden;
+}
+
+.instagram_track {
+    display: flex;
+    width: max-content;
+}
+
+.instagram_group {
+    position: relative;
+    width: 4970px; /* 기존 4950 + 마지막→첫번째 간격 20px */
+    height: 500px;
+    flex-shrink: 0;
+}
+
+.instagram_item {
+    position: absolute;
+    overflow: hidden;
+    border-radius: 30px;
+}
+
+.instagram_item img,
+.instagram_item video {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+
+/* 01 - 왼쪽 위 */
+.item01 {
+    left: 0;
+    top: 0;
+    width: 350px;
+    height: 325px;
+}
+
+
+/* 02 - 01 아래 */
+.item02 {
+    left: 0;
+    top: 340px; /* 325 + 15 */
+    width: 350px;
+    height: 160px;
+}
+
+
+/* 03 - 세로형 */
+.item03 {
+    left: 370px; /* 350 + 20 */
+    top: 0;
+    width: 350px;
+    height: 500px;
+}
+
+
+/* 04 - 가로형 */
+.item04 {
+    left: 740px; /* 370 + 350 + 20 */
+    top: 0;
+    width: 650px;
+    height: 500px;
+}
+
+
+/* 05 - 위쪽 */
+.item05 {
+    left: 1410px; /* 740 + 650 + 20 */
+    top: 0;
+    width: 350px;
+    height: 242.5px;
+}
+
+/* 06 - 05 아래 */
+.item06 {
+    left: 1410px;
+    top: 257.5px; /* 242.5 + 15 */
+    width: 350px;
+    height: 242.5px;
+}
+
+
+/* 07 - 세로형 */
+.item07 {
+    left: 1780px; /* 1410 + 350 + 20 */
+    top: 0;
+    width: 350px;
+    height: 500px;
+}
+
+
+/* 08 - 위쪽 */
+.item08 {
+    left: 2150px; /* 1780 + 350 + 20 */
+    top: 0;
+    width: 350px;
+    height: 160px;
+}
+
+/* 09 - 08 아래 */
+.item09 {
+    left: 2150px;
+    top: 175px; /* 160 + 15 */
+    width: 350px;
+    height: 325px;
+}
+
+
+/* 10 - 큰 가로형 */
+.item10 {
+    left: 2520px; /* 2150 + 350 + 20 */
+    top: 0;
+    width: 650px;
+    height: 500px;
+}
+
+
+/* 11 - 세로형 */
+.item11 {
+    left: 3190px; /* 2520 + 650 + 20 */
+    top: 0;
+    width: 350px;
+    height: 500px;
+}
+
+
+/* 12 - 위쪽 */
+.item12 {
+    left: 3560px; /* 3190 + 350 + 20 */
+    top: 0;
+    width: 350px;
+    height: 242.5px;
+}
+
+/* 13 - 12 아래 */
+.item13 {
+    left: 3560px;
+    top: 257.5px; /* 242.5 + 15 */
+    width: 350px;
+    height: 242.5px;
+}
+
+
+/* 14 - 큰 가로형 */
+.item14 {
+    left: 3930px; /* 3560 + 350 + 20 */
+    top: 0;
+    width: 650px;
+    height: 500px;
+}
+
+
+/* 15 - 마지막 세로형 */
+.item15 {
+    left: 4600px; /* 3930 + 650 + 20 */
+    top: 0;
+    width: 350px;
+    height: 500px;
+}
+
+
+
+
+
+
+
+
+
+/* ========================================
+   NOTICE
+======================================== */
+
+#notice {
+    position: relative;
+
+    width: 100%;
+    height: 780px;
+
+    overflow: hidden;
+
+    background: #E0DACE;
+    color: #333;
+}
+
+#notice .title {
+    margin: 100px 0 40px;
+
+    text-align: center;
+
+    font-family: 'Pretendard', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    color: #584539;
+}
+
+
+/* ========================================
+   NOISE
+======================================== */
+
+#notice .notice_noise {
+    position: absolute;
+    inset: 0;
+
+    z-index: 0;
+
+    pointer-events: none;
+
+    opacity: 0.12;
+
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160' viewBox='0 0 160 160'%3E%3Cfilter id='grain'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='1.2' numOctaves='1' seed='13' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23grain)'/%3E%3C/svg%3E");
+
+    background-repeat: repeat;
+    background-size: 160px 160px;
+
+    mix-blend-mode: multiply;
+}
+
+
+/* ========================================
+   NOTICE CONTENT
+   1315px × 300px
+======================================== */
+
+#notice .notice_inner {
+    position: relative;
+
+    z-index: 1;
+
+    width: 1315px;
+    height: 300px;
+
+    margin: 0 auto;
+
+    padding-top: 70px;
+}
+
+
+/* ========================================
+   TABLE
+======================================== */
+
+#notice .notice_table {
+    width: 100%;
+}
+
+
+/* ========================================
+   ROW
+======================================== */
+
+#notice .notice_row {
+    display: grid;
+
+    grid-template-columns: 100px minmax(0, 1fr) 100px;
+
+    align-items: center;
+
+    width: 100%;
+    height: 50px;
+
+    box-sizing: border-box;
+
+    border-bottom: 1px solid #FFFDF8;
+
+    color: #333;
+    text-decoration: none;
+
+    font-family: "Pretendard", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+
+    line-height: 1;
+
+    transition: background-color 0.2s ease;
+}
+
+
+/* ========================================
+   TABLE HEADER
+   번호 / 제목 / 작성자
+======================================== */
+
+#notice .notice_head {
+    height: 50px;
+
+    border-bottom: 1px solid #FFFDF8;
+
+    font-size: 14px;
+    font-weight: 400;
+
+    color: #333;
+}
+
+
+/* ========================================
+   NUMBER
+======================================== */
+
+#notice .notice_num {
+    text-align: center;
+}
+
+
+/* ========================================
+   SUBJECT
+======================================== */
+
+#notice .notice_subject {
+    min-width: 0;
+
+    padding: 0 20px;
+
+    color: #333;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    text-align: left;
+}
+
+
+/* 헤더의 제목만 중앙 정렬 */
+#notice .notice_head .notice_subject {
+    text-align: center;
+}
+
+
+/* ========================================
+   SUBJECT > P
+======================================== */
+
+#notice .notice_subject p {
+    margin: 0;
+
+    font-family: "Pretendard", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+
+    line-height: 1;
+
+    color: #333;
+}
+
+
+/* ========================================
+   본문 제목
+======================================== */
+
+/* 일반 제목도 Bold */
+#notice .notice_row:not(.notice_head) .notice_subject {
+    font-weight: 700;
+}
+
+
+/* ========================================
+   DATE / WRITER
+======================================== */
+
+#notice .notice_date {
+    text-align: center;
+
+    color: #333;
+
+    font-family: "Pretendard", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+
+/* ========================================
+   IMPORTANT NOTICE
+   공지 행
+======================================== */
+
+#notice .notice_important {
+    background: #FFFDF8;
+
+    border-top: 1px solid #FFFDF8;
+    border-bottom: 1px solid #FFFDF8;
+}
+
+
+/* ========================================
+   HOVER
+   공지 제외, 1~4만
+======================================== */
+
+#notice .notice_row:not(.notice_head):not(.notice_important):hover {
+    background: rgba(255, 252, 244, 0.35);
+}
+
+
+/* ========================================
+   RESPONSIVE
+======================================== */
+
+@media (max-width: 1400px) {
+
+    #notice .notice_inner {
+        width: calc(100% - 80px);
+        max-width: 1315px;
+    }
+
+}
+
+
+@media (max-width: 768px) {
+
+    #notice {
+        height: auto;
+        min-height: 600px;
+    }
+
+
+    #notice .notice_inner {
+        width: calc(100% - 32px);
+        height: auto;
+
+        padding-top: 60px;
+        padding-bottom: 80px;
+    }
+
+
+    #notice .title {
+        margin-bottom: 30px;
+
+        font-size: 24px;
+    }
+
+
+    #notice .notice_row {
+        grid-template-columns: 50px minmax(0, 1fr) 50px;
+
+        height: 50px;
+
+        font-size: 12px;
+    }
+
+
+    #notice .notice_subject {
+        padding: 0 10px;
+    }
+
+
+    #notice .notice_subject p {
+        font-size: 12px;
+    }
+
+
+    #notice .notice_date {
+        font-size: 12px;
+    }
+
+}
+
+
+
+
+
+
+/* ===========================================================
+footer
+=========================================================== */
+#footer {
+    width: 100%;
+    height: 400px;
+    background: #584539;
+}
+
+.footer_wrap {
+    width: 100%;
+    height: 250px;
+}
+
+.footer_inner {
+    width: 1320px;
+    height: 400px;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* logo */
+.footer_inner .logo {
+    margin: 0;
+    position: relative;
+    top: -75px;
+}
+
+.footer_inner .logo a {
+    display: block;
+}
+
+.footer_inner .logo img {
+    display: block;
+}
+
+
+/* 회사소개 + 고객센터 */
+.footer_info {
+    display: flex;
+    gap: 90px;
+
+    color: #FFFDF8;
+    font-family: 'Pretendard', sans-serif;
+}
+
+.footer_company,
+.footer_customer {
+    min-width: 120px;
+}
+
+.footer_company h3,
+.footer_customer h3 {
+    margin: 0 0 20px;
+
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.footer_company p,
+.footer_customer p {
+    margin: 0;
+
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+.footer_links {
+    margin-top: 12px;
+}
+
+.footer_links a {
+    display: block;
+
+    color: #FFFDF8;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+    text-decoration: none;
+}

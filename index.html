@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1360">
+    <!-- 브라우저 뷰포트 너비를 1360px로 고정하여 페이지를 그리도록 설정 -->
+    <title>노브 NOVE</title>
+
+    <!-- webfont 연결-->
+    <!-- font-family: 'Pretendard'; -->
+    <link rel="stylesheet" as="style" crossorigin
+        href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+
+    <!-- font-family: "Gelasio", serif; -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gelasio:ital,wght@0,400..700;1,400..700&display=swap"
+        rel="stylesheet">
+
+
+    <!-- 파비콘 연결 -->
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+
+    <!-- css 연결-->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <div id="wrap">
+
+        <!-- header -->
+        <div id="header_wrap">
+
+            <div class="header">
+
+                <div class="nav_wrap">
+                    <h1 class="logo">
+                        <a href="#">
+                            <img src="./images/logo.svg" alt="logo">
+                        </a>
+                    </h1>
+
+
+                    <div class="nav">
+                        <ul class="gnb">
+                            <li><a href="#brand">BRAND</a></li>
+                            <li><a href="#best">SHOP</a></li>
+                            <li><a href="#event">EVENT</a></li>
+                            <li><a href="#">NOTICE</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <ul class="util">
+                    <li>
+                        <a href="#">
+                            <img src="./images/main/main_banner/icon/search.svg" alt="돋보기">
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <img src="./images/main/main_banner/icon/mypage.svg" alt="마이페이지">
+                        </a>
+                    </li>
+
+                    <li class="shopper">
+                        <a href="#">
+                            <img src="./images/main/main_banner/icon/bag.svg" alt="쇼핑백">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- header -->
+    </div>
+
+
+    <!-- main_banner -->
+    <!-- Swiper -->
+    <div id="slide1">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="./images/main/main_banner/banner/main1.jpg" alt="메인">
+
+                    <div class="text_box">
+                        <p class="banner_tit">Daily Line</p>
+                        <p class="banner_txt">
+                            하루의 시작과 끝, 부드럽게 씻어내고 편안함은 남기도록
+                            <br>
+                            매일 만나는 데일리 오트 약산성 버블폼
+                        </p>
+                        <a href="#" class="banner_btn">View More</a> <!-- 인라인 블락으로 -->
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./images/main/main_banner/banner/main2.png" alt="메인">
+
+                    <div class="text_box">
+                        <p class="banner_tit">Daily Line</p>
+                        <p class="banner_txt">
+                            안개처럼 부드럽게 닿아, 건조한 순간마다 촉촉하게
+                            <br>
+                            피부가 먼저 찾는 데일리 오트 안개 미스트
+                        </p>
+                        <a href="#" class="banner_btn">View More</a> <!-- 인라인 블락으로 -->
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./images/main/main_banner/banner/main3.png" alt="메인">
+
+                    <div class="text_box">
+                        <p class="banner_tit">Recovery Line</p>
+                        <p class="banner_txt">
+                            예민해진 피부에 편안한 쉼을, 순하게 다독이도록
+                            <br>
+                            리커버리 쑥 진정 세럼
+                        </p>
+                        <a href="#" class="banner_btn">View More</a> <!-- 인라인 블락으로 -->
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./images/main/main_banner/banner/main4.png" alt="메인">
+
+                    <div class="text_box">
+                        <p class="banner_tit">Sun Line</p>
+                        <p class="banner_txt">
+                            햇빛을 마주하는 순간에도, 피부의 편안함을 그대로
+                            <br>
+                            부담 없이 바르는 블루베리 마일드 선크림
+                        </p>
+                        <a href="#" class="banner_btn">View More</a> <!-- 인라인 블락으로 -->
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper('.mySwiper', {
+            spaceBetween: 30,
+
+            loop: true,
+
+            autoplay: {
+                delay: 4500, // 4.5초마다 다음 슬라이드
+                disableOnInteraction: false, // 마우스로 넘겨도 자동재생 유지
+            },
+
+            speed: 1200, // 슬라이드 이동 속도
+
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        });
+    </script>
+    <!-- main_banner -->
+
+
+
+
+    <!-- brand 소개 -->
+    <div id="brand">
+
+        <!-- 브랜드 소개 문구 -->
+        <p class="brand_intro">
+            Built with honesty. Completed by trust.
+            <br>
+            <strong>정직함으로 만들고, 신뢰로 완성되다.</strong>
+        </p>
+
+
+        <!-- 브랜드 이미지 -->
+        <ul class="brand_img">
+
+            <!-- Honest -->
+            <li>
+
+                <!-- 평소 이미지 -->
+                <img class="img_default" src="./images/main/main_banner/brand/hover1.png" alt="Honest">
+
+                <!-- 호버 이미지 -->
+                <img class="img_hover" src="./images/main/main_banner/brand/honest.png" alt="Honest">
+
+                <!-- 항상 보이는 제목 -->
+                <p class="brand_title">
+                    <span class="brand_eng">Honest</span>
+                    <br>
+                    <span class="brand_nove">Nove</span>
+                    <span class="brand_kor">의 기준</span>
+                </p>
+
+                <!-- 호버 시 나타나는 세로선 -->
+                <span class="brand_line"></span>
+
+                <!-- 호버 시 나타나는 설명 -->
+                <p class="brand_hover">
+                    바른 원칙에서 시작해,<br>
+                    타협하지 않는 정직함을 지킵니다.
+                </p>
+
+            </li>
+
+
+            <!-- Mild -->
+            <li>
+
+                <!-- 평소 이미지 -->
+                <img class="img_default" src="./images/main/main_banner/brand/hover2.png" alt="Mild">
+
+                <!-- 호버 이미지 -->
+                <img class="img_hover" src="./images/main/main_banner/brand/mild.png" alt="Mild">
+
+                <!-- 항상 보이는 제목 -->
+                <p class="brand_title">
+                    <span class="brand_eng">Mild</span>
+                    <br>
+                    <span class="brand_nove">Nove</span>
+                    <span class="brand_kor">의 방식</span>
+                </p>
+
+                <!-- 호버 시 나타나는 세로선 -->
+                <span class="brand_line"></span>
+
+                <!-- 호버 시 나타나는 설명 -->
+                <p class="brand_hover">
+                    부담은 덜고,<br>
+                    매일의 케어를 편안하게 이어갑니다.
+                </p>
+
+            </li>
+
+
+            <!-- Trust -->
+            <li>
+
+                <!-- 평소 이미지 -->
+                <img class="img_default" src="./images/main/main_banner/brand/hover3.png" alt="Trust">
+
+                <!-- 호버 이미지 -->
+                <img class="img_hover" src="./images/main/main_banner/brand/trust.png" alt="Trust">
+
+                <!-- 항상 보이는 제목 -->
+                <p class="brand_title">
+                    <span class="brand_eng">Trust</span>
+                    <br>
+                    <span class="brand_nove">Nove</span>
+                    <span class="brand_kor">의 완성</span>
+                </p>
+
+                <!-- 호버 시 나타나는 세로선 -->
+                <span class="brand_line"></span>
+
+                <!-- 호버 시 나타나는 설명 -->
+                <p class="brand_hover">
+                    꾸준한 마음으로,<br>
+                    피부와의 약속을 지킵니다.
+                </p>
+
+            </li>
+
+        </ul>
+
+    </div>
+    <!-- brand 소개 -->
+
+
+
+    <!-- best_item -->
+    <section id="best">
+
+        <h2 class="title">BEST ITEM</h2>
+
+        <ul class="best_list">
+
+            <!-- 01 -->
+            <li class="best_item">
+                <a href="#">
+                    <div class="best_img">
+                        <img src="./images/main/main_banner/best/foam.png" alt="데일리 오트 약산성 버블폼">
+                    </div>
+
+                    <div class="best_info">
+                        <p class="best_name">데일리 오트 약산성 버블폼</p>
+
+                        <p class="best_price">
+                            <span>12%</span>
+                            <del class="original_price">24,900원</del>
+                            <strong>21,900원</strong>
+                        </p>
+                    </div>
+                </a>
+            </li>
+
+
+            <!-- 02 -->
+            <li class="best_item">
+                <a href="#">
+                    <div class="best_img">
+                        <img src="./images/main/main_banner/best/toner.png" alt="데일리 오트 안개 미스트 토너">
+                    </div>
+
+                    <div class="best_info">
+                        <p class="best_name">데일리 오트 안개 미스트 토너</p>
+
+                        <p class="best_price">
+                            <span>12%</span>
+                            <del class="original_price">26,000원</del>
+                            <strong>22,900원</strong>
+                        </p>
+                    </div>
+                </a>
+            </li>
+
+
+            <!-- 03 -->
+            <li class="best_item">
+                <a href="#">
+                    <div class="best_img">
+                        <img src="./images/main/main_banner/best/mug_foam.png" alt="리커버리 쑥 약산성 버블폼">
+                    </div>
+
+                    <div class="best_info">
+                        <p class="best_name">리커버리 쑥 약산성 버블폼</p>
+
+                        <p class="best_price">
+                            <span>12%</span>
+                            <del class="original_price">24,900원</del>
+                            <strong>21,900원</strong>
+                        </p>
+                    </div>
+                </a>
+            </li>
+
+
+            <!-- 04 -->
+            <li class="best_item">
+                <a href="#">
+                    <div class="best_img">
+                        <img src="./images/main/main_banner/best/stick.png" alt="블루베리 마일드 선스틱">
+                    </div>
+
+                    <div class="best_info">
+                        <p class="best_name">블루베리 마일드 선스틱</p>
+
+                        <p class="best_price">
+                            <span>12%</span>
+                            <del class="original_price">24,900원</del>
+                            <strong>21,900원</strong>
+                        </p>
+                    </div>
+                </a>
+            </li>
+
+        </ul>
+
+    </section>
+    <!-- best_item -->
+
+
+    <!-- line_banner -->
+    <div id="banner">
+
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                    · Gentle Care, Every Day · Honest Ingredients · Mild Formula
+                </div>
+                <div class="swiper-slide">
+                    · Gentle Care, Every Day · Honest Ingredients · Mild Formula
+                </div>
+                <div class="swiper-slide">
+                    · Gentle Care, Every Day · Honest Ingredients · Mild Formula
+                </div>
+                <div class="swiper-slide">
+                    · Gentle Care, Every Day · Honest Ingredients · Mild Formula
+                </div>
+                <div class="swiper-slide">
+                    · Gentle Care, Every Day · Honest Ingredients · Mild Formula
+                </div>
+                <div class="swiper-slide">
+                    · Gentle Care, Every Day · Honest Ingredients · Mild Formula
+                </div>
+                <div class="swiper-slide">
+                    · Gentle Care, Every Day · Honest Ingredients · Mild Formula
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper("#banner .mySwiper", {
+            slidesPerView: "auto",
+            spaceBetween: 10,
+            loop: true,
+
+            allowTouchMove: false,
+
+            autoplay: {
+                delay: 0,
+                disableOnInteraction: false,
+            },
+
+            speed: 15000,
+
+            freeMode: true,
+            freeModeMomentum: false,
+        });
+    </script>
+    <!-- line_banner -->
+
+
+    <!-- event -->
+    <section id="event">
+
+        <h2 class="title">EVENT</h2>
+
+        <ul class="event_list">
+
+            <li class="event_item">
+                <a href="#">
+                    <div class="event_img">
+                        <img src="./images/main/main_banner/event/welcome.png" alt="신규가입">
+                    </div>
+
+                    <div class="event_info">
+                        <p class="event_name">신규가입 혜택 안내</p>
+                        <p class="event_benefit">첫 구매 헤택</p>
+                    </div>
+                </a>
+            </li>
+
+            <li class="event_item">
+                <a href="#">
+                    <div class="event_img">
+                        <img src="./images/main/main_banner/event/membership.png" alt="멤버십">
+                    </div>
+
+                    <div class="event_info">
+                        <p class="event_name">회원등급별 혜택 안내</p>
+                        <p class="event_benefit">멤버십 혜택</p>
+                    </div>
+                </a>
+            </li>
+
+            <li class="event_item">
+                <a href="#">
+                    <div class="event_img">
+                        <img src="./images/main/main_banner/event/review.png" alt="리뷰">
+                    </div>
+
+                    <div class="event_info">
+                        <p class="event_name">자사몰 리뷰 작성 리워드 안내</p>
+                        <p class="event_benefit">적립금 최대 2,000P 지급</p>
+                    </div>
+                </a>
+            </li>
+
+        </ul>
+
+    </section>
+    <!-- event -->
+
+
+    <!-- review -->
+    <section id="review">
+
+        <div class="review_sticky">
+
+            <!-- REVIEW 배경 -->
+            <div class="review_bg">
+                <img src="./images/main/main_banner/review/review_bg.png" alt="">
+            </div>
+
+            <!-- REVIEW 타이틀 -->
+            <h2 class="review_title">
+                <span class="review_r">R</span><span class="review_eview">eview</span>
+            </h2>
+
+
+            <!-- 왼쪽 리뷰 -->
+            <div class="review_motion review_motion_left" data-aos="fade-up" data-aos-duration="1200"
+                data-aos-easing="ease-out" data-aos-once="true">
+
+                <div class="review_column review_left">
+
+                    <div class="review_card">
+                        <img src="./images/main/main_banner/review/review1.png" alt="리뷰 이미지">
+
+                        <div class="review_info">
+                            <span class="review_star">★★★★★ 4.9</span>
+                            <strong>블루베리 마일드 선스틱</strong>
+                            <p>
+                                원래 선크림 잘 안 바르는 편인데, 이건 스틱이라 그냥 슥슥 바르면 되니까 손에 묻지도 않고, 야외에서 운동하다가 덧바르기도 편했어요. 햇빛에 노출된 부분이랑
+                                안 탄 부분의 차이가 생각보다 확실해서 좀 놀랐네요ㅋㅋ 앞으로는 좀 더 꼼꼼하게 •••
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="review_card">
+                        <img src="./images/main/main_banner/review/review2.png" alt="리뷰 이미지">
+
+                        <div class="review_info">
+                            <span class="review_star">★★★★★ 4.9</span>
+                            <strong>데일리 오트 약산성 버블폼</strong>
+                            <p>
+                                세안 후에도 피부가 당기지 않고, 붉은 트러블이 많이 진정됐어요.처음에는 볼 주변에 붉은 트러블이 꽤 올라와 있었는데, 꾸준히 사용하면서 눈에 띄게 편안해진
+                                느낌이에요. <br>
+                                거품이 부드럽고 풍성해서 피부를 세게 문지르지 않고 세 •••
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="review_card">
+                        <img src="./images/main/main_banner/review/review3.png" alt="리뷰 이미지">
+
+                        <div class="review_info">
+                            <span class="review_star">★★★★★ 4.8</span>
+                            <strong>리커버리 쑥 약산성 버블폼</strong>
+                            <p>
+                                피부가 예민한 날에도 편하게 사용할 수 있어서 좋아요. <br>
+                                요즘 피부 컨디션이 들쑥날쑥해서 순한 클렌저를 찾다가 사용해봤어요. 특히 피부가 예민한 날에는 세안 후에 얼굴이 쉽게 붉어지고 따끔했는데, 이건 씻어낸 뒤에도
+                                피부가 편안한 느낌 •••
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!-- 오른쪽 리뷰 -->
+            <div class="review_motion review_motion_right" data-aos="fade-down" data-aos-duration="1200"
+                data-aos-easing="ease-out" data-aos-once="true">
+
+                <div class="review_column review_right">
+
+                    <div class="review_card">
+                        <img src="./images/main/main_banner/review/review4.png" alt="리뷰 이미지">
+
+                        <div class="review_info">
+                            <span class="review_star">★★★★★ 4.8</span>
+                            <strong>블루베리 마일드 선크림</strong>
+                            <p>
+                                매일 바르기 부담 없는 선크림이라 요즘 이것만 써요. <br>
+                                선크림은 답답하거나 끈적이는 느낌 때문에 잘 안 바르게 되는데, 이건 생각보다 가볍게 발려서 좋았어요. 피부에 겉도는 느낌이 적어서 아침에 스킨케어 마지막에
+                                바르기 편했어요. 피 •••
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="review_card">
+                        <img src="./images/main/main_banner/review/review5.png" alt="리뷰 이미지">
+
+                        <div class="review_info">
+                            <span class="review_star">★★★★★ 4.9</span>
+                            <strong>리커버리 쑥 장벽 크림</strong>
+                            <p>
+                                부드럽게 펴 발리고, 피부가 편안하게 촉촉해져요. <br>
+                                크림이 무겁지 않고 부드럽게 펴 발려서 피부에 부담 없이 사용할 수 있었어요. <br>
+                                흡수된 후에도 건조함 없이 촉촉함이 오래 남아서, 예민 •••
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="review_card">
+                        <img src="./images/main/main_banner/review/review6.png" alt="리뷰 이미지">
+
+                        <div class="review_info">
+                            <span class="review_star">★★★★★ 5.0</span>
+                            <strong>데일리 오트 안개 미스트 토너</strong>
+                            <p>
+                                회사에서 하루 종일 에어컨을 틀어놓다 보니 오후만 되면 피부가 금방 건조해지는 편이에요. 그래서 책상 한쪽에 두고 있다가 피부가 건조하다 싶을 때마다 수시로
+                                뿌려주고 있어요. <br>
+                                안개 분사라 가볍게 촉촉해지는 느낌이라 메이크업 전후 •••
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- review -->
+
+
+    <!-- insta -->
+    <section id="instagram">
+
+        <h2 class="title">INSTAGRAM</h2>
+
+        <div class="instagram_wrap">
+            <div class="instagram_track">
+
+                <!-- 1세트 -->
+                <div class="instagram_group">
+
+                    <div class="instagram_item item01">
+                        <video src="./images/main/main_banner/insta/1.mp4" autoplay muted loop playsinline></video>
+                    </div>
+
+                    <div class="instagram_item item02">
+                        <img src="./images/main/main_banner/insta/2.png" alt="2">
+                    </div>
+
+                    <div class="instagram_item item03">
+                        <img src="./images/main/main_banner/insta/3.png" alt="3">
+                    </div>
+
+                    <div class="instagram_item item04">
+                        <img src="./images/main/main_banner/insta/4.png" alt="4">
+                    </div>
+
+                    <div class="instagram_item item05">
+                        <img src="./images/main/main_banner/insta/5.png" alt="5">
+                    </div>
+
+                    <div class="instagram_item item06">
+                        <img src="/images/main/main_banner/insta/6.png" alt="6">
+                    </div>
+
+                    <div class="instagram_item item07">
+                        <img src="/images/main/main_banner/insta/7.png" alt="7">
+                    </div>
+
+                    <div class="instagram_item item08">
+                        <img src="./images/main/main_banner/insta/8.png" alt="8">
+                    </div>
+
+                    <div class="instagram_item item09">
+                        <img src="/images/main/main_banner/insta/9.png" alt="9">
+                    </div>
+
+                    <div class="instagram_item item10">
+                        <img src="/images/main/main_banner/insta/10.png" alt="10">
+                    </div>
+
+                    <div class="instagram_item item11">
+                        <img src="./images/main/main_banner/insta/11.png" alt="11">
+                    </div>
+
+                    <div class="instagram_item item12">
+                        <video src="./images/main/main_banner/insta/12.mp4" autoplay muted loop playsinline></video>
+                    </div>
+
+                    <div class="instagram_item item13">
+                        <img src="./images/main/main_banner/insta/13.png" alt="13">
+                    </div>
+
+                    <div class="instagram_item item15">
+                        <video src="./images/main/main_banner/insta/14.mp4" autoplay muted loop playsinline></video>
+                    </div>
+
+                    <div class="instagram_item item14">
+                        <img src="./images/main/main_banner/insta/15.png" alt="15">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- insta -->
+
+
+
+
+    <!-- notice -->
+    <section id="notice">
+        <div class="notice_noise"></div>
+
+        <div class="notice_inner">
+
+            <h2 class="title">NOTICE</h2>
+
+            <div class="notice_table">
+
+                <div class="notice_row notice_head">
+                    <div class="notice_num">번호</div>
+                    <div class="notice_subject">제목</div>
+                    <div class="notice_date">작성자</div>
+                </div>
+
+                <a href="#" class="notice_row notice_important">
+                    <div class="notice_num">공지</div>
+                    <div class="notice_subject">
+                        <p>🎄크리스마스 EVENT 안내🎄</p>
+                    </div>
+                    <div class="notice_date">노브</div>
+                </a>
+
+                <a href="#" class="notice_row">
+                    <div class="notice_num">4</div>
+                    <div class="notice_subject">
+                        <p>🖤블랙 프라이데이 EVENT 안내🖤</p>
+                    </div>
+                    <div class="notice_date">노브</div>
+                </a>
+
+                <a href="#" class="notice_row">
+                    <div class="notice_num">3</div>
+                    <div class="notice_subject">
+                        <p>배송 및 고객센터 운영 안내</p>
+                    </div>
+                    <div class="notice_date">노브</div>
+                </a>
+
+                <a href="#" class="notice_row">
+                    <div class="notice_num">2</div>
+                    <div class="notice_subject">
+                        <p>회원탈퇴 유의사항</p>
+                    </div>
+                    <div class="notice_date">노브</div>
+                </a>
+
+                <a href="#" class="notice_row">
+                    <div class="notice_num">1</div>
+                    <div class="notice_subject">
+                        <p>제품 사용 및 보관 안내</p>
+                    </div>
+                    <div class="notice_date">노브</div>
+                </a>
+
+            </div>
+
+        </div>
+    </section>
+    <!-- notice -->
+
+    <!-- footer -->
+<section id="footer">
+
+    <div class="footer_wrap">
+
+        <div class="footer_inner">
+
+            <!-- logo -->
+            <h1 class="logo">
+                <a href="#">
+                    <img src="./images/footer_logo.svg" alt="Nove">
+                </a>
+            </h1>
+
+            <!-- footer info -->
+            <div class="footer_info">
+
+                <!-- 회사소개 -->
+                <div class="footer_company">
+                    <h3>회사소개</h3>
+
+                    <p>
+                        (주) 노브<br>
+                        대표 송미진<br>
+                        이메일 nove@nove.com
+                    </p>
+                </div>
+
+                <!-- 고객센터 -->
+                <div class="footer_customer">
+                    <h3>고객센터</h3>
+
+                    <p>
+                        1551-4721<br>
+                        평일 09:00 - 18:00<br>
+                        점심시간 12:30 - 13:30<br>
+                        토·일 및 공휴일 휴무
+                    </p>
+
+                    <div class="footer_links">
+                        <a href="#">이용약관</a>
+                        <a href="#">개인정보처리방침</a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- footer -->
+
+    <!-- 제이쿼리 오픈소스 연결 -->
+    <script src="js/jquery-4.0.0.min.js"></script>
+
+    <!-- 제이쿼리 파일 연결 -->
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
