@@ -91,66 +91,136 @@ body {
 
 
 /* ============================================================
-header 
+header
 ============================================================ */
-#header_wrap {
+
+.header_container {
+    position: relative;
+
     width: 100%;
     height: 80px;
+}
+
+
+/* header */
+
+#header_wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 80px;
+
+    z-index: 1000;
+
     font-weight: bold;
     background-color: #F8F1E5;
     text-align: center;
+
+    transition:
+        transform 0.4s ease,
+        background-color 0.4s ease;
 }
+
+
+/* 스크롤 시작 후 고정 */
+
+#header_wrap.scroll_header {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    background-color: rgba(248, 241, 229, 0.5);
+
+    /* 배경 블러 */
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+
+/* 아래로 스크롤 */
+
+#header_wrap.hide {
+    transform: translateY(-100%);
+}
+
+
+/* 위로 스크롤 */
+
+#header_wrap.show {
+    transform: translateY(0);
+}
+
+
+/* ============================================================
+header inner
+============================================================ */
 
 .header {
     width: 1320px;
+    height: 80px;
+
     margin: 0 auto;
+
     display: flex;
     justify-content: space-between;
 }
+
 
 .nav_wrap {
     display: flex;
 }
 
+
 .logo {
     margin-top: 16px;
 }
+
 
 .logo a img {
     display: block;
 }
 
+
 .nav {
     margin-left: 70px;
 }
+
 
 .gnb {
     display: flex;
 }
 
+
 .gnb li {
     margin: 25px;
 }
+
 
 .util {
     display: flex;
     margin-top: 25px;
 }
 
+
 .util li a img {
     margin-left: 10px;
 }
+
 
 .util li.shopper {
     position: relative;
 }
 
+
 .util li.shopper::after {
     content: "(0)";
-    font-size: 12px;
-    font-weight: 400;
 
     position: absolute;
+
+    font-size: 12px;
+    font-weight: 400;
 }
 
 
@@ -290,13 +360,13 @@ main_banner
     width: 100%;
 
     opacity: 0;
-    transition: opacity 1s ease-in-out;
+    transition: opacity 0.8s ease-in-out;
 }
 
 /* 기본 이미지도 자연스럽게 사라지도록 */
 .brand_img li .img_default {
     opacity: 1;
-    transition: opacity 1s ease-in-out;
+    transition: opacity 0.8s ease-in-out;
 }
 
 /* 호버 */
@@ -386,6 +456,7 @@ main_banner
 }
 
 
+
 /* 호버 설명 */
 
 .brand_hover {
@@ -394,14 +465,13 @@ main_banner
     top: 67%;
     left: 50%;
 
-    transform: translateX(-50%);
+    transform: translateX(-50%) translateY(30px);
 
     width: 90%;
 
     margin: 0;
 
     text-align: center;
-
     white-space: nowrap;
 
     font-family: 'Pretendard', sans-serif;
@@ -416,15 +486,22 @@ main_banner
 
     z-index: 2;
 
-    transition: opacity 1s ease;
+    transition:
+        opacity 0.6s ease,
+        transform 0.6s ease;
 }
 
 
 /* 호버 시 선 + 설명 */
 
-.brand_img li:hover .brand_line,
+.brand_img li:hover .brand_line {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 .brand_img li:hover .brand_hover {
     opacity: 1;
+    transform: translateX(-50%) translateY(0);
 }
 
 
@@ -485,14 +562,16 @@ main_banner
 
 
 /* 상품 이미지 영역 */
-
 .best_img {
+    position: relative;
+
     width: 100%;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    overflow: hidden;
 }
+
+
+/* 기본 / 호버 이미지 */
 
 .best_img img {
     display: block;
@@ -500,7 +579,41 @@ main_banner
     width: 100%;
     height: auto;
 
+    transition:
+        opacity 0.6s ease,
+        transform 0.6s ease;
+}
 
+
+/* 호버 이미지 */
+
+.best_img .img_hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+
+    opacity: 0;
+}
+
+
+/* ============================================================
+   HOVER
+============================================================ */
+
+/* 기본 이미지 사라짐 */
+
+.best_item:hover .img_default {
+    opacity: 0;
+}
+
+
+/* 호버 이미지 나타남 + 확대 */
+
+.best_item:hover .img_hover {
+    opacity: 1;
+    transform: scale(1.08);
 }
 
 
@@ -643,13 +756,22 @@ main_banner
 .event_img {
     width: 100%;
     overflow: hidden;
+    border-radius: 20px;
 }
 
 .event_img img {
     display: block;
     width: 100%;
     height: auto;
-    border-radius: 20px;
+
+    /* img에서는 radius 제거 */
+    border-radius: 0;
+
+    transition: transform 0.5s ease;
+}
+
+.event_item:hover .event_img img {
+    transform: scale(1.08);
 }
 
 .event_info {
@@ -1283,21 +1405,15 @@ main_banner
     margin: 0;
 
     font-family: "Pretendard", sans-serif;
-    font-size: 16px;
-    font-weight: 700;
+    font-size: 15px;
+    font-weight: 400;
 
     line-height: 1;
-
     color: #333;
 }
 
-
-/* ========================================
-   본문 제목
-======================================== */
-
-/* 일반 제목도 Bold */
-#notice .notice_row:not(.notice_head) .notice_subject {
+/* 크리스마스 EVENT만 Bold */
+#notice .notice_important .notice_subject p {
     font-weight: 700;
 }
 
