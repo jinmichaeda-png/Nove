@@ -1,3 +1,66 @@
+let lastScrollY = 0;
+
+const header = document.querySelector("#header_wrap");
+
+window.addEventListener("scroll", function () {
+
+    const currentScrollY = window.scrollY;
+
+
+    /* ========================================
+       맨 위
+    ======================================== */
+
+    if (currentScrollY <= 0) {
+
+        header.classList.remove("scroll_header");
+        header.classList.remove("hide");
+        header.classList.remove("show");
+
+        lastScrollY = 0;
+
+        return;
+    }
+
+
+    /* ========================================
+       스크롤 시작
+    ======================================== */
+
+    header.classList.add("scroll_header");
+
+
+    /* ========================================
+       아래로 스크롤
+    ======================================== */
+
+    if (currentScrollY > lastScrollY) {
+
+        header.classList.add("hide");
+        header.classList.remove("show");
+
+    }
+
+
+    /* ========================================
+       위로 스크롤
+    ======================================== */
+
+    else if (currentScrollY < lastScrollY) {
+
+        header.classList.remove("hide");
+        header.classList.add("show");
+
+    }
+
+
+    lastScrollY = currentScrollY;
+
+});
+
+
+
+
 const reviewSection = document.querySelector("#review");
 const reviewSticky = document.querySelector(".review_sticky");
 
