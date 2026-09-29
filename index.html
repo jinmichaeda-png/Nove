@@ -27,56 +27,68 @@
 
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
 </head>
 
 <body>
     <div id="wrap">
 
         <!-- header -->
-        <div id="header_wrap">
+        <div class="header_container">
 
-            <div class="header">
+            <div id="header_wrap">
 
-                <div class="nav_wrap">
-                    <h1 class="logo">
-                        <a href="#">
-                            <img src="./images/logo.svg" alt="logo">
-                        </a>
-                    </h1>
+                <div class="header">
 
+                    <div class="nav_wrap">
 
-                    <div class="nav">
-                        <ul class="gnb">
-                            <li><a href="#brand">BRAND</a></li>
-                            <li><a href="#best">SHOP</a></li>
-                            <li><a href="#event">EVENT</a></li>
-                            <li><a href="#">NOTICE</a></li>
-                        </ul>
+                        <h1 class="logo">
+                            <a href="#">
+                                <img src="./images/logo.svg" alt="logo">
+                            </a>
+                        </h1>
+
+                        <div class="nav">
+                            <ul class="gnb">
+                                <li><a href="#brand">BRAND</a></li>
+                                <li><a href="#best">SHOP</a></li>
+                                <li><a href="#event">EVENT</a></li>
+                                <li><a href="#notice">NOTICE</a></li>
+                            </ul>
+                        </div>
+
                     </div>
+
+                    <ul class="util">
+
+                        <li>
+                            <a href="#">
+                                <img src="./images/main/main_banner/icon/search.svg" alt="돋보기">
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <img src="./images/main/main_banner/icon/mypage.svg" alt="마이페이지">
+                            </a>
+                        </li>
+
+                        <li class="shopper">
+                            <a href="#">
+                                <img src="./images/main/main_banner/icon/bag.svg" alt="쇼핑백">
+                            </a>
+                        </li>
+
+                    </ul>
+
                 </div>
 
-                <ul class="util">
-                    <li>
-                        <a href="#">
-                            <img src="./images/main/main_banner/icon/search.svg" alt="돋보기">
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#">
-                            <img src="./images/main/main_banner/icon/mypage.svg" alt="마이페이지">
-                        </a>
-                    </li>
-
-                    <li class="shopper">
-                        <a href="#">
-                            <img src="./images/main/main_banner/icon/bag.svg" alt="쇼핑백">
-                        </a>
-                    </li>
-                </ul>
             </div>
+
         </div>
         <!-- header -->
+
     </div>
 
 
@@ -174,26 +186,22 @@
     <div id="brand">
 
         <!-- 브랜드 소개 문구 -->
-        <p class="brand_intro">
+        <p class="brand_intro" data-aos="fade-up">
             Built with honesty. Completed by trust.
             <br>
             <strong>정직함으로 만들고, 신뢰로 완성되다.</strong>
         </p>
 
 
-        <!-- 브랜드 이미지 -->
         <ul class="brand_img">
 
             <!-- Honest -->
-            <li>
+            <li data-aos="fade-up" data-aos-delay="500">
 
-                <!-- 평소 이미지 -->
                 <img class="img_default" src="./images/main/main_banner/brand/hover1.png" alt="Honest">
 
-                <!-- 호버 이미지 -->
                 <img class="img_hover" src="./images/main/main_banner/brand/honest.png" alt="Honest">
 
-                <!-- 항상 보이는 제목 -->
                 <p class="brand_title">
                     <span class="brand_eng">Honest</span>
                     <br>
@@ -201,10 +209,8 @@
                     <span class="brand_kor">의 기준</span>
                 </p>
 
-                <!-- 호버 시 나타나는 세로선 -->
                 <span class="brand_line"></span>
 
-                <!-- 호버 시 나타나는 설명 -->
                 <p class="brand_hover">
                     바른 원칙에서 시작해,<br>
                     타협하지 않는 정직함을 지킵니다.
@@ -214,15 +220,12 @@
 
 
             <!-- Mild -->
-            <li>
+            <li data-aos="fade-up" data-aos-delay="1000">
 
-                <!-- 평소 이미지 -->
                 <img class="img_default" src="./images/main/main_banner/brand/hover2.png" alt="Mild">
 
-                <!-- 호버 이미지 -->
                 <img class="img_hover" src="./images/main/main_banner/brand/mild.png" alt="Mild">
 
-                <!-- 항상 보이는 제목 -->
                 <p class="brand_title">
                     <span class="brand_eng">Mild</span>
                     <br>
@@ -230,10 +233,8 @@
                     <span class="brand_kor">의 방식</span>
                 </p>
 
-                <!-- 호버 시 나타나는 세로선 -->
                 <span class="brand_line"></span>
 
-                <!-- 호버 시 나타나는 설명 -->
                 <p class="brand_hover">
                     부담은 덜고,<br>
                     매일의 케어를 편안하게 이어갑니다.
@@ -243,15 +244,12 @@
 
 
             <!-- Trust -->
-            <li>
+            <li data-aos="fade-up" data-aos-delay="1500">
 
-                <!-- 평소 이미지 -->
                 <img class="img_default" src="./images/main/main_banner/brand/hover3.png" alt="Trust">
 
-                <!-- 호버 이미지 -->
                 <img class="img_hover" src="./images/main/main_banner/brand/trust.png" alt="Trust">
 
-                <!-- 항상 보이는 제목 -->
                 <p class="brand_title">
                     <span class="brand_eng">Trust</span>
                     <br>
@@ -259,10 +257,8 @@
                     <span class="brand_kor">의 완성</span>
                 </p>
 
-                <!-- 호버 시 나타나는 세로선 -->
                 <span class="brand_line"></span>
 
-                <!-- 호버 시 나타나는 설명 -->
                 <p class="brand_hover">
                     꾸준한 마음으로,<br>
                     피부와의 약속을 지킵니다.
@@ -282,13 +278,15 @@
 
         <h2 class="title">BEST ITEM</h2>
 
-        <ul class="best_list">
+        <ul class="best_list" data-aos="fade-up">
 
             <!-- 01 -->
             <li class="best_item">
                 <a href="#">
                     <div class="best_img">
-                        <img src="./images/main/main_banner/best/foam.png" alt="데일리 오트 약산성 버블폼">
+                        <img class="img_default" src="./images/main/main_banner/best/foam.png" alt="데일리 오트 약산성 버블폼">
+
+                        <img class="img_hover" src="./images/main/main_banner/best/foam_hover.png" alt="데일리 오트 약산성 버블폼">
                     </div>
 
                     <div class="best_info">
@@ -308,7 +306,10 @@
             <li class="best_item">
                 <a href="#">
                     <div class="best_img">
-                        <img src="./images/main/main_banner/best/toner.png" alt="데일리 오트 안개 미스트 토너">
+                        <img class="img_default" src="./images/main/main_banner/best/toner.png" alt="데일리 오트 안개 미스트 토너">
+
+                        <img class="img_hover" src="./images/main/main_banner/best/toner_hover.png"
+                            alt="데일리 오트 안개 미스트 토너">
                     </div>
 
                     <div class="best_info">
@@ -328,7 +329,10 @@
             <li class="best_item">
                 <a href="#">
                     <div class="best_img">
-                        <img src="./images/main/main_banner/best/mug_foam.png" alt="리커버리 쑥 약산성 버블폼">
+                        <img class="img_default" src="./images/main/main_banner/best/mug_foam.png" alt="리커버리 쑥 약산성 버블폼">
+
+                        <img class="img_hover" src="./images/main/main_banner/best/mugfoam_hover.png"
+                            alt="리커버리 쑥 약산성 버블폼">
                     </div>
 
                     <div class="best_info">
@@ -348,7 +352,9 @@
             <li class="best_item">
                 <a href="#">
                     <div class="best_img">
-                        <img src="./images/main/main_banner/best/stick.png" alt="블루베리 마일드 선스틱">
+                        <img class="img_default" src="./images/main/main_banner/best/stick.png" alt="블루베리 마일드 선스틱">
+
+                        <img class="img_hover" src="./images/main/main_banner/best/stick_hover.png" alt="블루베리 마일드 선스틱">
                     </div>
 
                     <div class="best_info">
@@ -436,7 +442,7 @@
 
         <ul class="event_list">
 
-            <li class="event_item">
+            <li class="event_item" data-aos="zoom-in" data-aos-delay="0">
                 <a href="#">
                     <div class="event_img">
                         <img src="./images/main/main_banner/event/welcome.png" alt="신규가입">
@@ -449,7 +455,7 @@
                 </a>
             </li>
 
-            <li class="event_item">
+            <li class="event_item" data-aos="zoom-in" data-aos-delay="150">
                 <a href="#">
                     <div class="event_img">
                         <img src="./images/main/main_banner/event/membership.png" alt="멤버십">
@@ -462,7 +468,7 @@
                 </a>
             </li>
 
-            <li class="event_item">
+            <li class="event_item" data-aos="zoom-in" data-aos-delay="300">
                 <a href="#">
                     <div class="event_img">
                         <img src="./images/main/main_banner/event/review.png" alt="리뷰">
@@ -689,7 +695,7 @@
     <section id="notice">
         <div class="notice_noise"></div>
 
-        <div class="notice_inner">
+        <div class="notice_inner" data-aos="fade-up" data-aos-duration="1000">
 
             <h2 class="title">NOTICE</h2>
 
@@ -747,59 +753,63 @@
     </section>
     <!-- notice -->
 
+
+
+
+
     <!-- footer -->
-<section id="footer">
+    <section id="footer">
 
-    <div class="footer_wrap">
+        <div class="footer_wrap">
 
-        <div class="footer_inner">
+            <div class="footer_inner">
 
-            <!-- logo -->
-            <h1 class="logo">
-                <a href="#">
-                    <img src="./images/footer_logo.svg" alt="Nove">
-                </a>
-            </h1>
+                <!-- logo -->
+                <h1 class="logo">
+                    <a href="#">
+                        <img src="./images/footer_logo.svg" alt="Nove">
+                    </a>
+                </h1>
 
-            <!-- footer info -->
-            <div class="footer_info">
+                <!-- footer info -->
+                <div class="footer_info">
 
-                <!-- 회사소개 -->
-                <div class="footer_company">
-                    <h3>회사소개</h3>
+                    <!-- 회사소개 -->
+                    <div class="footer_company">
+                        <h3>회사소개</h3>
 
-                    <p>
-                        (주) 노브<br>
-                        대표 송미진<br>
-                        이메일 nove@nove.com
-                    </p>
-                </div>
-
-                <!-- 고객센터 -->
-                <div class="footer_customer">
-                    <h3>고객센터</h3>
-
-                    <p>
-                        1551-4721<br>
-                        평일 09:00 - 18:00<br>
-                        점심시간 12:30 - 13:30<br>
-                        토·일 및 공휴일 휴무
-                    </p>
-
-                    <div class="footer_links">
-                        <a href="#">이용약관</a>
-                        <a href="#">개인정보처리방침</a>
+                        <p>
+                            (주) 노브<br>
+                            대표 송미진<br>
+                            이메일 nove@nove.com
+                        </p>
                     </div>
+
+                    <!-- 고객센터 -->
+                    <div class="footer_customer">
+                        <h3>고객센터</h3>
+
+                        <p>
+                            1551-4721<br>
+                            평일 09:00 - 18:00<br>
+                            점심시간 12:30 - 13:30<br>
+                            토·일 및 공휴일 휴무
+                        </p>
+
+                        <div class="footer_links">
+                            <a href="#">이용약관</a>
+                            <a href="#">개인정보처리방침</a>
+                        </div>
+                    </div>
+
                 </div>
 
             </div>
 
         </div>
 
-    </div>
-
-</section>
-<!-- footer -->
+    </section>
+    <!-- footer -->
 
     <!-- 제이쿼리 오픈소스 연결 -->
     <script src="js/jquery-4.0.0.min.js"></script>
@@ -807,6 +817,14 @@
     <!-- 제이쿼리 파일 연결 -->
     <script src="js/script.js"></script>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+    </script>
 </body>
 
 </html>
