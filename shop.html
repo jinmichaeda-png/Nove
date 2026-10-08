@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1360">
+    <!-- 브라우저 뷰포트 너비를 1360px로 고정하여 페이지를 그리도록 설정 -->
+    <title>NOVE - Shop</title>
+
+    <!-- webfont 연결-->
+    <!-- font-family: 'Pretendard'; -->
+    <link rel="stylesheet" as="style" crossorigin
+        href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+
+    <!-- font-family: "Gelasio", serif; -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gelasio:ital,wght@0,400..700;1,400..700&display=swap"
+        rel="stylesheet">
+
+
+    <!-- 파비콘 연결 -->
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+
+    <!-- css 연결-->
+    <link rel="stylesheet" href="css/shop.css">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+</head>
+
+<body>
+
+    <div id="wrap">
+
+        <!-- header -->
+        <div class="header_container">
+
+            <div id="header_wrap">
+
+                <div class="header">
+
+                    <div class="nav_wrap">
+
+                        <h1 class="logo">
+                            <a href="./index.html">
+                                <img src="./images/logo.svg" alt="logo">
+                            </a>
+                        </h1>
+
+                        <div class="nav">
+                            <ul class="gnb">
+                                <li><a href="./brand.html">BRAND</a></li>
+                                <li><a href="./shop.html">SHOP</a></li>
+                                <li><a href="#event">EVENT</a></li>
+                                <li><a href="#notice">NOTICE</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                    <ul class="util">
+
+                        <li>
+                            <a href="#">
+                                <img src="./images/main/main_banner/icon/search.svg" alt="돋보기">
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <img src="./images/main/main_banner/icon/mypage.svg" alt="마이페이지">
+                            </a>
+                        </li>
+
+                        <li class="shopper">
+                            <a href="#">
+                                <img src="./images/main/main_banner/icon/bag.svg" alt="쇼핑백">
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+        <!-- header -->
+
+
+
+        <!-- product detail -->
+
+
+        <div class="detail_inner">
+
+            <!-- ============================================================
+                왼쪽 상세 영역
+                ============================================================ -->
+            <div class="detail_left">
+
+                <!-- 제품 대표 이미지 -->
+                <div class="detail_image">
+                    <img src="./images/shop/foam.png" alt="제품 상세 이미지">
+                </div>
+
+
+                <!-- 탭 -->
+                <div class="detail_tab">
+
+                    <button type="button" class="active">
+                        상품정보
+                    </button>
+
+                    <button type="button">
+                        구매후기
+                    </button>
+
+                    <button type="button">
+                        제품문의
+                    </button>
+
+                </div>
+
+
+                <!-- 상품정보 -->
+                <div class="detail_content">
+                    <img src="./images/shop/full.png" alt="full">
+                </div>
+
+
+
+
+                <!-- review -->
+
+                <section class="product_review">
+
+                    <!-- review header -->
+                    <div class="review_header">
+
+                        <h2>REVIEW</h2>
+
+                    </div>
+
+
+                    <!-- review top -->
+                    <div class="review_top">
+
+                        <!-- review photo -->
+                        <div class="review_photo">
+
+                            <!-- rating -->
+                            <div class="review_rating">
+                                <strong>★ 4.9</strong>
+                                <span>리뷰 371개</span>
+                            </div>
+
+                            <ul>
+
+                                <li>
+                                    <img src="./images/shop/1.png" alt="리뷰 이미지">
+                                </li>
+
+                                <li>
+                                    <img src="./images/shop/2.png" alt="리뷰 이미지">
+                                </li>
+
+                                <li>
+                                    <img src="./images/shop/3.png" alt="리뷰 이미지">
+                                </li>
+
+                                <li>
+                                    <img src="./images/shop/4.png" alt="리뷰 이미지">
+                                </li>
+
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- review list -->
+                    <div class="review_list">
+
+                        <!-- review 01 -->
+                        <article class="review_item">
+
+                            <div class="review_star">
+                                ★★★★★
+                            </div>
+
+                            <div class="review_body">
+
+                                <div class="review_image">
+                                    <img src="./images/shop/5.png" alt="리뷰 이미지">
+                                </div>
+
+                                <div class="review_text">
+                                    <p>
+                                        세안하고 나서 당기는 느낌이 확실히 덜해요. <br>
+                                        거품이 생각보다 부드럽고 촘촘해서 얼굴에 올렸을 때 자극 없이 세안되는 느낌이에요. <br>
+                                        원래 세안하고 나면 볼 쪽이 금방 당겼는데 이건 씻고 난 뒤에도 피부가 편안해서 요즘 아침저녁으로 계속 사용하고 있어요.
+                                    </p>
+                                </div>
+
+                            </div>
+
+                        </article>
+
+
+                        <!-- review 02 -->
+                        <article class="review_item">
+
+                            <div class="review_star">
+                                ★★★★★
+                            </div>
+
+                            <div class="review_text">
+                                <p>
+                                    거품이 부드러워서 매일 쓰기 좋아요. <br>
+                                    요즘 피부가 예민해져서 클렌저 바꾸는 것도 고민됐는데 순한 제품 찾다가 구매했어요. <br>
+                                    펌프 한두 번만 눌러도 바로 거품이 나와서 따로 거품 낼 필요도 없고 편합니다. <br>
+                                    세안 후 뽀득한 느낌보다는 촉촉하고 편안하게 마무리되는 타입이에요.
+                                </p>
+                            </div>
+
+                        </article>
+
+
+                        <!-- review 03 -->
+                        <article class="review_item">
+
+                            <div class="review_star">
+                                ★★★★★
+                            </div>
+
+                            <div class="review_text">
+                                <p>
+                                    아침 세안용으로 특히 마음에 들어요. <br>
+                                    아침에는 너무 세정력 강한 제품을 쓰면 피부가 건조해지는 느낌이 있는데 이건 부담 없이 사용하기 좋았어요. <br>
+                                    거품으로 부드럽게 씻고 물로 헹구면 깔끔한데 피부가 너무 마르지는 않아서 만족합니다.
+                                </p>
+                            </div>
+
+                        </article>
+
+
+                        <!-- review 04 -->
+                        <article class="review_item">
+
+                            <div class="review_star">
+                                ★★★★★
+                            </div>
+
+                            <div class="review_body">
+
+                                <div class="review_image">
+                                    <img src="./images/shop/6.png" alt="리뷰 이미지">
+                                </div>
+
+                                <div class="review_text">
+                                    <p>
+                                        피부 컨디션 안 좋을 때도 부담 없이 사용 중 <br>
+                                        환절기만 되면 얼굴이 쉽게 붉어지고 예민해지는 편이라 세안제를 고를 때도 신경을 많이 써요. <br>
+                                        며칠 사용해봤는데 따갑거나 불편한 느낌 없이 무난하게 잘 맞아서 계속 써보려고요. <br>
+                                        펌프형이라 욕실에서 사용하기도 편해요.
+                                    </p>
+                                </div>
+
+                            </div>
+
+                        </article>
+
+                    </div>
+
+
+                    <!-- review pagination -->
+                    <div class="review_pagination">
+
+                        <button type="button" class="prev">
+                            &lt;
+                        </button>
+
+                        <button type="button" class="active">
+                            1
+                        </button>
+
+                        <button type="button">
+                            2
+                        </button>
+
+                        <button type="button">
+                            3
+                        </button>
+
+                        <button type="button">
+                            4
+                        </button>
+
+                        <button type="button">
+                            5
+                        </button>
+
+                        <button type="button" class="next">
+                            &gt;
+                        </button>
+
+                    </div>
+
+                </section>
+                <!-- review -->
+
+            </div>
+
+            <!-- 오른쪽 고정 영역 -->
+            <aside class="detail_right">
+
+                <div class="product_info">
+
+                    <!-- 상품 기본 정보 -->
+                    <div class="product_basic">
+
+                        <p class="product_category">DAILY OAT</p>
+
+                        <h1 class="product_name">
+                            데일리 오트 약산성 버블폼
+                        </h1>
+
+                        <div class="product_price">
+                            <strong>12%</strong>
+                            <del>24,900</del>
+                            <span>21,900</span>
+                        </div>
+
+                        <div class="delivery">
+                            <p>국내배송</p>
+                            <p>배송비 3,000원 (35,000원 이상 구매 시 무료)</p>
+                        </div>
+
+                    </div>
+
+
+                    <!-- 추가 구성상품 -->
+                    <div class="add_product">
+
+                        <p class="add_product_title">
+                            - [추가구성상품] 추가로 구매를 원하시면 선택해 주세요 -
+                        </p>
+
+                        <div class="add_product_none">
+                            ------ 선택 안 함 ------
+                        </div>
+
+                        <div class="add_product_item">
+
+                            <div class="add_product_img">
+                                <img src="./images/shop/foam_refill.png" alt="리필">
+                            </div>
+
+                            <div class="add_product_info">
+                                <p>데일리 오트 약산성 버블폼 리필 (300ml 용량)</p>
+                                <span>17,900원</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- 구매 수량 -->
+                    <div class="order_item">
+
+                        <p class="order_product_name">
+                            데일리 오트 약산성 버블폼
+                        </p>
+
+                        <div class="quantity">
+                            <button type="button" class="quantity_minus">−</button>
+                            <span>1</span>
+                            <button type="button" class="quantity_plus">+</button>
+                        </div>
+
+                        <strong class="order_price">
+                            21,900원
+                        </strong>
+
+                    </div>
+
+
+                    <!-- 총 금액 -->
+                    <div class="total_price">
+
+                        <span>Total</span>
+
+                        <strong>21,900원</strong>
+
+                        <em>(1개)</em>
+
+                    </div>
+
+
+                    <!-- 버튼 -->
+                    <div class="order_buttons">
+
+                        <button type="button" class="order_btn">
+                            장바구니
+                        </button>
+
+                        <button type="button" class="order_btn">
+                            구매하기
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </aside>
+            <!-- 오른쪽 고정 영역 -->
+
+
+
+            <!-- TOP 버튼 -->
+            <button type="button" class="top_btn">TOP</button>
+        </div>
+
+        <!-- footer -->
+        <section id="footer">
+
+            <div class="footer_wrap">
+
+                <div class="footer_inner">
+
+                    <!-- logo -->
+                    <h1 class="logo">
+                        <a href="#">
+                            <img src="./images/footer_logo.svg" alt="Nove">
+                        </a>
+                    </h1>
+
+                    <!-- footer info -->
+                    <div class="footer_info">
+
+                        <!-- 회사소개 -->
+                        <div class="footer_company">
+                            <h3>회사소개</h3>
+
+                            <p>
+                                (주) 노브<br>
+                                대표 송미진<br>
+                                이메일 nove@nove.com
+                            </p>
+                        </div>
+
+                        <!-- 고객센터 -->
+                        <div class="footer_customer">
+                            <h3>고객센터</h3>
+
+                            <p>
+                                1551-4721<br>
+                                평일 09:00 - 18:00<br>
+                                점심시간 12:30 - 13:30<br>
+                                토·일 및 공휴일 휴무
+                            </p>
+
+                            <div class="footer_links">
+                                <a href="#">이용약관</a>
+                                <a href="#">개인정보처리방침</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+        <!-- footer -->
+
+
+        <script>
+            const topBtn = document.querySelector('.top_btn');
+
+            topBtn.addEventListener('click', function () {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+        </script>
+
+
+
+        <!-- 제이쿼리 오픈소스 연결 -->
+        <script src="js/jquery-4.0.0.min.js"></script>
+
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+        <script>
+            AOS.init({
+                duration: 1000,
+                once: true
+            });
+
+
+
+
+            /* 구매 수량 */
+
+            const minusBtn = document.querySelector('.quantity_minus');
+            const plusBtn = document.querySelector('.quantity_plus');
+            const quantity = document.querySelector('.quantity span');
+
+            const orderPrice = document.querySelector('.order_price');
+            const totalPrice = document.querySelector('.total_price strong');
+            const totalQuantity = document.querySelector('.total_price em');
+
+            const productPrice = 21900;
+
+
+            /* 수량 변경 */
+
+            function updateQuantity(count) {
+
+                quantity.textContent = count;
+
+                // 상품 가격
+                orderPrice.textContent =
+                    (productPrice * count).toLocaleString() + '원';
+
+                // 총 금액
+                totalPrice.textContent =
+                    (productPrice * count).toLocaleString() + '원';
+
+                // 총 수량
+                totalQuantity.textContent =
+                    '(' + count + '개)';
+            }
+
+
+            /* - 버튼 */
+
+            minusBtn.addEventListener('click', function () {
+
+                let count = Number(quantity.textContent);
+
+                if (count > 1) {
+                    count--;
+                    updateQuantity(count);
+                }
+
+            });
+
+
+            /* + 버튼 */
+
+            plusBtn.addEventListener('click', function () {
+
+                let count = Number(quantity.textContent);
+
+                count++;
+                updateQuantity(count);
+
+            });
+        </script>
+
+
+</body>
+
+</html>
