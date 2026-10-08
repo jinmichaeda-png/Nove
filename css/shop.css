@@ -1,0 +1,1330 @@
+@charset "utf-8";
+
+/* webfont */
+/* 웹폰트없으면 지우세요!!! */
+html,
+body,
+div,
+span,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+em,
+img,
+small,
+strong,
+b,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tr,
+th,
+td,
+article,
+aside,
+footer,
+header,
+nav,
+section,
+summary,
+video,
+* {
+    padding: 0;
+    margin: 0;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+html {
+    /* Prevent font scaling in landscape */
+
+    -webkit-text-size-adjust: none;
+    /*Chrome, Safari, newer versions of Opera*/
+
+    -moz-text-size-adjust: none;
+    /*Firefox*/
+
+    -ms-text-size-adjust: none;
+    /*Ie*/
+
+    -o-text-size-adjust: none;
+    /*old versions of Opera*/
+}
+
+body {
+    font-family: 'Pretendard';
+    font-size: 20px;
+    line-height: 1.5;
+    color: #333;
+    background-color: #FFF;
+}
+
+#wrap {
+    min-width: 1360px;
+}
+
+
+
+/* ============================================================
+header
+============================================================ */
+
+.header_container {
+    position: relative;
+
+    width: 100%;
+    height: 80px;
+}
+
+
+/* header */
+
+#header_wrap {
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 80px;
+
+    z-index: 1000;
+
+    font-weight: bold;
+
+    background-color: #F8F1E5;
+    text-align: center;
+
+    transition:
+        background-color 0.4s ease;
+}
+
+
+/* 스크롤 시작 후 고정 */
+
+#header_wrap.scroll_header {
+    background-color: rgba(248, 241, 229, 0.5);
+
+    /* 배경 블러 */
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+
+/* ============================================================
+header inner
+============================================================ */
+
+.header {
+    width: 1320px;
+    height: 80px;
+
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.nav_wrap {
+    display: flex;
+}
+
+
+.logo {
+    margin-top: 16px;
+}
+
+
+.logo a img {
+    display: block;
+}
+
+
+.nav {
+    margin-left: 70px;
+}
+
+
+.gnb {
+    display: flex;
+    color: #584539;
+}
+
+
+.gnb li {
+    margin: 25px;
+}
+
+
+.util {
+    display: flex;
+    margin-top: 25px;
+    color: #584539;
+}
+
+
+.util li a img {
+    margin-left: 10px;
+}
+
+
+.util li.shopper {
+    position: relative;
+}
+
+
+.util li.shopper::after {
+    content: "(0)";
+
+    position: absolute;
+
+    font-size: 12px;
+    font-weight: 400;
+}
+
+
+
+
+
+/* =============================================================
+   전체 영역
+============================================================= */
+.detail_inner {
+    position: relative;
+
+    width: 1540px;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+/* =============================================================
+   LEFT
+============================================================= */
+
+.detail_left {
+    width: 860px;
+    flex-shrink: 0;
+}
+
+
+/* =============================================================
+   상세 상단 제품 이미지
+============================================================= */
+
+.detail_image {
+    width: 600px;
+    height: 750px;
+
+    margin: 0 auto;
+}
+
+.detail_image img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+
+/* =============================================================
+   TAB
+============================================================= */
+
+.detail_tab {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+
+    margin: 60px 0 0;
+}
+
+
+/* 탭 버튼 */
+
+.detail_tab button {
+    width: 200px;
+    height: 50px;
+
+    box-sizing: border-box;
+
+    border: 1px solid #584539;
+    background: transparent;
+
+    font-family: "Pretendard", sans-serif;
+    font-size: 20px;
+    color: #584539;
+
+    cursor: pointer;
+
+    transition:
+        background 0.3s ease,
+        color 0.3s ease;
+}
+
+
+/* 버튼 사이 경계선 겹침 방지 */
+
+.detail_tab button+button {
+    margin-left: -1px;
+}
+
+
+/* 활성화 */
+
+.detail_tab button.active {
+    background: #584539;
+    color: #fffdf8;
+}
+
+
+/* hover */
+
+.detail_tab button:hover {
+    background: #584539;
+    color: #fffdf8;
+}
+
+
+/* =============================================================
+   상품 상세 내용
+============================================================= */
+
+.detail_content {
+    width: 860px;
+
+    padding: 80px 0;
+
+    box-sizing: border-box;
+}
+
+
+/* 상품 상세 이미지 */
+
+.detail_content img {
+    display: block;
+
+    width: 100%;
+    max-width: 860px;
+    height: auto;
+}
+
+
+
+/* ============================================================
+   product detail
+============================================================ */
+
+#product_detail {
+    width: 100%;
+    padding-top:110px;
+}
+
+
+
+/* ============================================================
+   LEFT
+============================================================ */
+
+.detail_left {
+    width: 860px;
+
+    flex-shrink: 0;
+}
+
+
+/* ============================================================
+   상세 상단 제품 이미지
+============================================================ */
+
+.detail_image {
+    width: 600px;
+    height: 750px;
+
+    margin: 60px auto;
+}
+
+.detail_image img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+
+/* ============================================================
+   TAB
+============================================================ */
+
+.detail_tab {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+
+    margin: 60px 0 0;
+}
+
+
+/* 탭 버튼 */
+
+.detail_tab button {
+    width: 200px;
+    height: 50px;
+
+    box-sizing: border-box;
+
+    border: 1px solid #584539;
+    background: transparent;
+
+    font-family: "Pretendard", sans-serif;
+    font-size: 20px;
+    color: #584539;
+
+    cursor: pointer;
+
+    transition:
+        background 0.3s ease,
+        color 0.3s ease;
+}
+
+
+/* 버튼 사이 경계선 겹침 방지 */
+
+.detail_tab button+button {
+    margin-left: -1px;
+}
+
+
+/* 활성화 */
+
+.detail_tab button.active {
+    background: #584539;
+    color: #fffdf8;
+}
+
+
+/* hover */
+
+.detail_tab button:hover {
+    background: #584539;
+    color: #fffdf8;
+}
+
+
+/* ============================================================
+   상품 상세 내용
+============================================================ */
+
+.detail_content {
+    width: 860px;
+
+    box-sizing: border-box;
+}
+
+
+/* 상품 상세 이미지 */
+
+.detail_content img {
+    display: block;
+
+    width: 100%;
+    max-width: 860px;
+    height: auto;
+}
+
+
+/* ============================================================
+   리뷰
+============================================================ */
+
+.product_review {
+    width: 100%;
+
+    margin-top: 300px;
+    padding-bottom: 300px;
+
+    box-sizing: border-box;
+}
+
+
+/* ============================================================
+   review header
+============================================================ */
+
+.review_header {
+    width: 100%;
+
+    padding-bottom: 20px;
+
+    border-bottom: 1px solid #584539;
+
+    box-sizing: border-box;
+}
+
+.review_header h2 {
+    margin: 0 0 -10px 10px;
+
+    font-family: "Gelasio", serif;
+    font-size: 30px;
+    font-style: italic;
+    font-weight: 600;
+
+    color: #584539;
+}
+
+
+/* ============================================================
+   review top
+============================================================ */
+
+.review_top {
+    display: flex;
+    align-items: center;
+
+    width: 100%;
+
+    box-sizing: border-box;
+}
+
+
+/* ============================================================
+   review rating
+============================================================ */
+
+.review_rating {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 130px;
+    height: 130px;
+
+    flex-shrink: 0;
+
+    margin: 0 30px 0 -30px;
+
+    box-sizing: border-box;
+}
+
+.review_rating strong {
+    font-size: 20px;
+    font-weight: 600;
+
+    color: #584539;
+}
+
+.review_rating span {
+    margin-top: 5px;
+
+    font-size: 12px;
+
+    color: #999;
+}
+
+
+/* ============================================================
+   review photo
+============================================================ */
+
+.review_photo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+
+    padding: 20px 10px;
+
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.review_photo ul {
+    display: flex;
+
+    gap: 30px;
+
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+.review_photo li {
+    width: 130px;
+    height: 130px;
+
+    flex-shrink: 0;
+
+    overflow: hidden;
+}
+
+.review_photo img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+
+/* ============================================================
+   review list
+============================================================ */
+
+.review_list {
+    width: 100%;
+
+    border-top: 1px solid #584539;
+}
+
+.review_item {
+    width: 100%;
+
+    margin-bottom: 50px;
+}
+
+.review_item:last-child {
+    margin-bottom: 0;
+}
+
+
+/* ============================================================
+   review star
+============================================================ */
+
+.review_star {
+    margin: 50px 0 10px 0;
+
+    font-size: 16px;
+    letter-spacing: 1px;
+
+    color: #584539;
+}
+
+
+/* ============================================================
+   review body
+============================================================ */
+
+.review_body {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    gap: 20px;
+}
+
+
+/* ============================================================
+   review image
+============================================================ */
+
+.review_image {
+    width: 130px;
+    height: 130px;
+
+    flex-shrink: 0;
+
+    overflow: hidden;
+}
+
+.review_image img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+
+/* ============================================================
+   review text
+============================================================ */
+
+.review_text {
+    width: 100%;
+}
+
+.review_text p {
+    margin: 0;
+
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+
+    color: #584539;
+}
+
+
+/* ============================================================
+   review pagination
+============================================================ */
+
+.review_pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 12px;
+
+    margin-top: 50px;
+}
+
+.review_pagination button {
+    display: block;
+
+    padding: 0;
+
+    border: 0;
+    background: none;
+
+    font-family: "Pretendard", sans-serif;
+    font-size: 14px;
+
+    color: #999;
+
+    cursor: pointer;
+}
+
+.review_pagination button.active {
+    color: #584539;
+    font-weight: 600;
+}
+
+.review_pagination .prev,
+.review_pagination .next {
+    color: #584539;
+}
+
+
+/* ============================================================
+   PRODUCT DETAIL - RIGHT
+============================================================ */
+
+.detail_right {
+    position: sticky;
+
+    top: 0;
+    left: calc(50% + 90px);
+
+    width: 680px;
+
+    box-sizing: border-box;
+
+    display: flex;
+    justify-content: center;
+
+    font-family: "Pretendard", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+
+    color: #333;
+
+    z-index: 10;
+}
+
+
+/* ============================================================
+   PRODUCT INFO
+============================================================ */
+
+.product_info {
+    width: 600px;
+
+    box-sizing: border-box;
+
+    padding: 90px 20px 80px;
+}
+
+
+/* ============================================================
+   상품 기본 정보
+============================================================ */
+
+.product_basic {
+    width: 100%;
+}
+
+
+/* 카테고리 */
+
+.product_category {
+    margin: 0 0 20px;
+
+    font-family: "Gelasio", serif;
+    font-size: 16px;
+    font-style: italic;
+
+    color: #584539;
+}
+
+
+/* 제품명 */
+
+.product_name {
+    margin: 0 0 15px;
+
+    font-family: "Pretendard", sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+
+    color: #111;
+}
+
+
+/* ============================================================
+   가격
+============================================================ */
+
+.product_price {
+    margin: 0;
+
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    line-height: 1;
+}
+
+
+/* 할인율 */
+
+.product_price strong {
+    margin-right: 8px;
+
+    font-family: "Pretendard", sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+
+    color: #584539;
+}
+
+
+/* 정가 */
+
+.product_price del {
+    margin-right: 10px;
+
+    font-family: "Pretendard", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+
+    color: #777;
+}
+
+
+/* 판매가 */
+
+.product_price span {
+    width: 100%;
+
+    margin-top: 7px;
+
+    font-family: "Pretendard", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+
+    color: #584539;
+}
+
+
+/* ============================================================
+   배송
+============================================================ */
+
+.delivery {
+    margin-top: 30px;
+
+    font-family: "Pretendard", sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+
+    color: #333;
+}
+
+.delivery p {
+    margin: 0;
+}
+
+
+/* ============================================================
+   추가 구성상품
+============================================================ */
+
+.add_product {
+    width: 100%;
+
+    margin-top: 22px;
+
+    font-family: "Pretendard", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+
+/* 추가 구성상품 제목 */
+
+.add_product_title {
+    width: 100%;
+    height: 35px;
+
+    margin: 0;
+
+    display: flex;
+    align-items: center;
+
+    border-top: 1px solid #584539;
+    border-bottom: 1px solid #584539;
+
+    box-sizing: border-box;
+
+    padding-left: 8px;
+}
+
+
+/* 선택 안 함 */
+
+.add_product_none {
+    width: 100%;
+    height: 35px;
+
+    display: flex;
+    align-items: center;
+
+    border-bottom: 1px solid #584539;
+
+    box-sizing: border-box;
+
+    padding-left: 8px;
+}
+
+
+/* 추가상품 */
+
+.add_product_item {
+    width: 100%;
+    height: 85px;
+
+    display: flex;
+    align-items: center;
+
+    border-bottom: 1px solid #584539;
+
+    box-sizing: border-box;
+}
+
+
+/* 추가상품 이미지 */
+
+.add_product_img {
+    width: 55px;
+    height: 55px;
+
+    margin-right: 12px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+}
+
+.add_product_img img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+}
+
+
+/* 추가상품 정보 */
+
+.add_product_info {
+    font-size: 16px;
+    font-weight: 400;
+
+    color: #333;
+}
+
+.add_product_info span {
+    display: block;
+
+    margin-top: 2px;
+}
+
+
+/* ============================================================
+   주문 상품
+============================================================ */
+
+.order_item {
+    width: 100%;
+    min-height: 56px;
+
+    display: flex;
+    align-items: center;
+
+    margin-top: 30px;
+
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+
+    box-sizing: border-box;
+
+    font-family: "Pretendard", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+
+/* 상품명 */
+
+.order_product_name {
+    flex: 1;
+
+    padding-left: 8px;
+}
+
+
+/* ============================================================
+   수량
+============================================================ */
+
+.quantity {
+    width: 80px;
+    height: 25px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+
+    margin-right: 25px;
+
+    border: 1px solid #999;
+
+    box-sizing: border-box;
+}
+
+
+/* 수량 버튼 */
+
+.quantity button {
+    width: 25px;
+    height: 25px;
+
+    padding: 0;
+
+    border: 0;
+    background: transparent;
+
+    font-family: "Pretendard", sans-serif;
+    font-size: 12px;
+
+    cursor: pointer;
+}
+
+
+/* 수량 숫자 */
+
+.quantity span {
+    width: 30px;
+    height: 25px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-left: 1px solid #999;
+    border-right: 1px solid #999;
+
+    box-sizing: border-box;
+
+    padding-top: 1px;
+}
+
+
+/* ============================================================
+   주문 가격
+============================================================ */
+
+.order_price {
+    width: 100px;
+
+    flex-shrink: 0;
+
+    padding-right: 8px;
+
+    box-sizing: border-box;
+
+    font-family: "Pretendard", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+
+    text-align: right;
+
+    white-space: nowrap;
+}
+
+
+/* ============================================================
+   TOTAL
+============================================================ */
+
+.total_price {
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-end;
+
+    margin-top: 10px;
+    padding-right: 8px;
+
+    font-family: "Pretendard", sans-serif;
+}
+
+
+/* Total */
+
+.total_price span {
+    margin-right: 18px;
+
+    font-size: 20px;
+}
+
+
+/* 총 금액 */
+
+.total_price strong {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+
+/* 수량 */
+
+.total_price em {
+    margin-left: 6px;
+
+    font-size: 16px;
+    font-style: normal;
+
+    color: #333;
+}
+
+
+/* ============================================================
+   구매 버튼
+============================================================ */
+
+.order_buttons {
+    width: 100%;
+
+    display: flex;
+
+    gap: 8px;
+
+    margin-top: 38px;
+}
+
+.order_buttons button {
+    width: 290px;
+    height: 50px;
+
+    box-sizing: border-box;
+
+    font-family: "Pretendard", sans-serif;
+    font-size: 20px;
+
+    cursor: pointer;
+
+    transition:
+        background 0.3s ease,
+        color 0.3s ease;
+}
+
+
+/* 주문 버튼 */
+
+.order_btn {
+    border: 1px solid #584539;
+
+    background: transparent;
+
+    color: #584539;
+}
+
+
+/* hover */
+
+.order_btn:hover {
+    background: #584539;
+
+    color: #fffdf8;
+}
+
+
+
+
+/* ===========================================================
+footer
+=========================================================== */
+#footer {
+    width: 100%;
+    height: 350px;
+    background: #584539;
+}
+
+.footer_wrap {
+    width: 100%;
+    height: 100%;
+}
+
+.footer_inner {
+    width: 1320px;
+    height: 100%;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* logo */
+.footer_inner .logo {
+    margin: 0;
+    position: relative;
+    top: -75px;
+}
+
+.footer_inner .logo a {
+    display: block;
+}
+
+.footer_inner .logo img {
+    display: block;
+}
+
+
+/* 회사소개 + 고객센터 */
+.footer_info {
+    display: flex;
+    gap: 90px;
+
+    color: #FFFDF8;
+    font-family: 'Pretendard', sans-serif;
+}
+
+.footer_company,
+.footer_customer {
+    min-width: 120px;
+}
+
+.footer_company h3,
+.footer_customer h3 {
+    margin: 0 0 20px;
+
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.footer_company p,
+.footer_customer p {
+    margin: 0;
+
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+.footer_links {
+    margin-top: 12px;
+}
+
+.footer_links a {
+    display: block;
+
+    color: #FFFDF8;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+/* ==========================================================
+ TOP 버튼
+============================================================ */
+.top_btn {
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+    width: 50px;
+    height: 50px;
+    
+    border: 1px solid #584539;
+    border-radius: 50%;
+    background: #fffdf8;
+    color: #584539;
+    
+    font-family: 'Pretendard', sans-serif;
+    font-size: 13px;
+    cursor: pointer;
+    
+    z-index: 999;
+    
+    transition: all 0.3s ease;
+}
+
+.top_btn:hover {
+    background: #584539;
+    color: #fffdf8;
+    border: 1px solid #fffdf8;
+}

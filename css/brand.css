@@ -1,0 +1,1088 @@
+@charset "utf-8";
+
+/* webfont */
+/* 웹폰트없으면 지우세요!!! */
+html,
+body,
+div,
+span,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+em,
+img,
+small,
+strong,
+b,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tr,
+th,
+td,
+article,
+aside,
+footer,
+header,
+nav,
+section,
+summary,
+video,
+* {
+    padding: 0;
+    margin: 0;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+html {
+    /* Prevent font scaling in landscape */
+
+    -webkit-text-size-adjust: none;
+    /*Chrome, Safari, newer versions of Opera*/
+
+    -moz-text-size-adjust: none;
+    /*Firefox*/
+
+    -ms-text-size-adjust: none;
+    /*Ie*/
+
+    -o-text-size-adjust: none;
+    /*old versions of Opera*/
+}
+
+body {
+    font-family: 'Pretendard';
+    font-size: 20px;
+    line-height: 1.5;
+    color: #333;
+    background-color: #FFFDF8;
+}
+
+#wrap {
+    min-width: 1360px;
+}
+
+
+
+/* ============================================================
+header
+============================================================ */
+
+.header_container {
+    position: relative;
+
+    width: 100%;
+    height: 80px;
+}
+
+
+/* header */
+
+#header_wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 80px;
+
+    z-index: 1000;
+
+    font-weight: bold;
+    background-color: #F8F1E5;
+    text-align: center;
+
+    transition:
+        transform 0.4s ease,
+        background-color 0.4s ease;
+}
+
+
+/* 스크롤 시작 후 고정 */
+
+#header_wrap.scroll_header {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    background-color: rgba(248, 241, 229, 0.5);
+
+    /* 배경 블러 */
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+
+/* 아래로 스크롤 */
+
+#header_wrap.hide {
+    transform: translateY(-100%);
+}
+
+
+/* 위로 스크롤 */
+
+#header_wrap.show {
+    transform: translateY(0);
+}
+
+
+/* ============================================================
+header inner
+============================================================ */
+
+.header {
+    width: 1320px;
+    height: 80px;
+
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.nav_wrap {
+    display: flex;
+}
+
+
+.logo {
+    margin-top: 16px;
+}
+
+
+.logo a img {
+    display: block;
+}
+
+
+.nav {
+    margin-left: 70px;
+}
+
+
+.gnb {
+    display: flex;
+    color: #584539;
+}
+
+
+.gnb li {
+    margin: 25px;
+}
+
+
+.util {
+    display: flex;
+    margin-top: 25px;
+    color: #584539;
+}
+
+
+.util li a img {
+    margin-left: 10px;
+}
+
+
+.util li.shopper {
+    position: relative;
+}
+
+
+.util li.shopper::after {
+    content: "(0)";
+
+    position: absolute;
+
+    font-size: 12px;
+    font-weight: 400;
+}
+
+
+
+/* ============================================================
+ brand intro 
+=============================================================*/
+#brand_intro {
+    position: relative;
+    width: 100%;
+    height: 700px;
+    overflow: hidden;
+}
+
+/* background video */
+.brand_intro_video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.brand_intro_video video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+
+/* overlay */
+.brand_intro_overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(98, 84, 71, 0.15);
+}
+
+/* content */
+.brand_intro_inner {
+    position: relative;
+    z-index: 2;
+
+    width: 1320px;
+    height: 100%;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+/* 로고 + 글자 전체 박스 */
+.brand_intro_content {
+    width: 600px;
+    text-align: center;
+}
+
+/* Nove 로고 */
+.brand_intro_logo {
+    margin-bottom: 43px;
+}
+
+.brand_intro_logo img {
+    display: block;
+    width: 150px;
+    height: auto;
+    margin: 0 auto;
+}
+
+/* 글자 */
+.brand_intro_text h2 {
+    margin: 0 0 43px;
+
+    font-family: 'Pretendard', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.4;
+    color: #584539;
+}
+
+/* 설명 */
+.brand_intro_text p {
+    margin: 0;
+
+    font-family: 'Pretendard', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.6;
+    color: #fff;
+    text-shadow: 1px 1px 2px rgba(51, 51, 51, 0.5);
+}
+
+
+
+
+/* ============================================================
+brand values
+============================================================ */
+
+#brand_values {
+    margin-top: 100px;
+    width: 100%;
+    height: 500px;
+
+    background: #FFFDF8;
+
+    box-sizing: border-box;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.brand_values_inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* circle */
+
+.brand_value {
+    width: 450px;
+    height: 300px;
+
+    border: 1px solid #584539;
+    border-radius: 50%;
+
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    position: relative;
+}
+
+
+/* 원 겹치기 */
+
+.brand_value + .brand_value {
+    margin-left: -70px;
+}
+
+
+/* Honest / Mild / Trust */
+
+.brand_value h3 {
+    margin: 0 0 10px;
+
+    font-family: 'Gelasio', serif;
+    font-size: 40px;
+    font-weight: 600;
+    font-style: italic;
+
+    color: #584539;
+}
+
+
+/* 바른 기준으로 */
+
+.brand_value strong {
+    margin-bottom: 10px;
+
+    font-family: 'Pretendard', sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+
+    color: #584539;
+}
+
+
+/* 설명 */
+
+.brand_value p {
+    margin: 0;
+
+    font-family: 'Pretendard', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+
+    color: #C2B297;
+}
+
+
+
+/* ============================================================
+brand story 공통
+============================================================ */
+
+
+/* 모든 Brand Story 섹션 */
+
+.brand_story,
+.brand_story_oat,
+.brand_story_mugwort,
+.brand_story_blueberry {
+    position: relative;
+
+    height: 750px;
+
+    margin: 100px auto 0;
+
+    background: #FFFDF8;
+
+    box-sizing: border-box;
+}
+
+
+/* 모든 inner */
+
+.brand_story_inner,
+.brand_story_oat_inner,
+.brand_story_mugwort_inner,
+.brand_story_blueberry_inner {
+    position: relative;
+
+    width: 100%;
+    height: 100%;
+}
+
+
+/* ============================================================
+brand story 공통 content
+============================================================ */
+
+
+/* 제목 */
+
+.brand_story_content h2 {
+    margin: 0 0 70px;
+
+    font-family: 'Gelasio', serif;
+    font-size: 44px;
+    font-weight: 700;
+    font-style: italic;
+    line-height: 1.2;
+
+    color: #584539;
+
+    text-shadow:
+        3px 4px 4px rgba(51, 51, 51, 0.25);
+}
+
+
+/* 부제목 */
+
+.brand_story_content h3 {
+    margin: 0 0 12px;
+
+    font-family: 'Pretendard', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.4;
+
+    color: #584539;
+}
+
+
+/* 이어지는 선 */
+
+.brand_story_line {
+    width: 1px;
+    height: 100px;
+
+    margin-bottom: 12px;
+
+    background: #333;
+}
+
+
+/* 설명 */
+
+.brand_story_content p {
+    margin: 0;
+
+    font-family: 'Pretendard', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.75;
+
+    color: #584539;
+}
+
+
+/* 마지막 줄 */
+
+.brand_story_content p span {
+    display: inline-block;
+
+    line-height: 1.5;
+}
+
+
+/* 강조 */
+
+.brand_story_content p strong {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+
+/* 모든 Brand Story 이미지 기본 설정 */
+
+.brand_story_image img,
+.brand_story_oat_image img,
+.brand_story_mugwort_image img,
+.brand_story_blueberry_image img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+
+
+/* ============================================================
+brand story
+Mineral Spring Water
+============================================================ */
+
+
+/* visual */
+
+.brand_story_visual {
+    position: absolute;
+
+    width: 592px;
+    height: 654px;
+
+    left: 220px;
+    top: 55px;
+}
+
+
+/* 색상 사각형 */
+
+.brand_story_bg {
+    position: absolute;
+
+    width: 360px;
+    height: 390px;
+
+    bottom: 0;
+    left: 0;
+
+    background: #FFF9ED;
+
+    z-index: 0;
+}
+
+
+/* image */
+
+.brand_story_image {
+    position: absolute;
+
+    width: 452px;
+    height: 550px;
+
+    top: 0;
+    right: 0;
+
+    z-index: 1;
+}
+
+
+/* text 위치 */
+
+.brand_story_text {
+    position: absolute;
+
+    width: 600px;
+
+    left: 930px;
+    top: 70px;
+}
+
+
+
+/* ============================================================
+brand story oat
+============================================================ */
+
+
+/* visual */
+
+.brand_story_oat_visual {
+    position: absolute;
+
+    width: 929px;
+    height: 556px;
+
+    left: 870px;
+    top: 75px;
+}
+
+
+/* 색상 사각형 */
+
+.brand_story_oat_bg {
+    position: absolute;
+
+    width: 514px;
+    height: 353px;
+
+    left: 415px;
+    top: 203px;
+
+    background: #F2E4CB;
+
+    z-index: 0;
+}
+
+
+/* image */
+
+.brand_story_oat_image {
+    position: absolute;
+
+    width: 750px;
+    height: 500px;
+
+    left: 0;
+    top: 0;
+
+    z-index: 1;
+}
+
+
+/* text 위치 */
+
+.brand_story_oat_text {
+    position: absolute;
+
+    width: 500px;
+
+    left: 325px;
+    top: 100px;
+}
+
+
+/* ============================================================
+brand story mugwort
+============================================================ */
+
+.brand_story_mugwort {
+    position: relative;
+
+    height: 750px;
+
+    margin: 100px auto 0;
+
+    background: #FFFDF8;
+
+    box-sizing: border-box;
+}
+
+
+.brand_story_mugwort_inner {
+    position: relative;
+
+    width: 100%;
+    height: 100%;
+}
+
+
+/* visual
+이미지 + 배경 박스가 하나의 묶음
+전체 710 × 586 */
+
+.brand_story_mugwort_visual {
+    position: absolute;
+
+    width: 710px;
+    height: 586px;
+
+    left: 220px;
+    top: 75px;
+}
+
+
+/* 색상 사각형
+360 × 390
+왼쪽 하단 */
+
+.brand_story_mugwort_bg {
+    position: absolute;
+
+    width: 360px;
+    height: 390px;
+
+    left: 0;
+    bottom: 0;
+
+    background: #ECEFEA;
+
+    z-index: 0;
+}
+
+
+/* image
+630 × 461
+오른쪽 상단 */
+
+.brand_story_mugwort_image {
+    position: absolute;
+
+    width: 630px;
+    height: 461px;
+
+    top: 0;
+    right: 0;
+
+    z-index: 1;
+}
+
+.brand_story_mugwort_text {
+    position: absolute;
+
+    width: 500px;
+
+    left: 1050px;
+    top: 100px;
+}
+
+
+/* ============================================================
+brand story blueberry
+============================================================ */
+.brand_story_blueberry {
+    position: relative;
+    height: 750px;
+    margin: 100px auto 0;
+    background: #FFFDF8;
+    box-sizing: border-box;
+}
+
+.brand_story_blueberry_inner {
+    position: relative;
+    width: 1468px;
+    height: 578px;
+    margin: 0 auto;
+}
+
+
+/* 색상 박스 */
+
+.brand_story_blueberry_bg {
+    position: absolute;
+    width: 1414px;
+    height: 317px;
+    left: 0;
+    bottom: 0;
+    background: #E4E5F0;
+    z-index: 0;
+}
+
+
+/* 텍스트 */
+
+.brand_story_blueberry_text {
+    position: absolute;
+    width: 600px;
+    left: 100px;
+    top: 35px;
+    z-index: 2;
+}
+
+
+/* 이미지 */
+
+.brand_story_blueberry_image {
+    position: absolute;
+    width: 650px;
+    height: 470px;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.brand_story_blueberry_image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+
+
+/* ===========================================================
+ eco
+============================================================ */
+#eco {
+    position: relative;
+    width: 100%;
+    height: 635px;
+
+    overflow: hidden;
+
+    box-sizing: border-box;
+}
+
+
+/* 배경 영상 */
+
+.eco_video {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: center;
+
+    z-index: 0;
+}
+
+.eco_inner {
+    position: relative;
+    z-index: 1;
+
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    box-sizing: border-box;
+
+}
+
+
+/* 메인 문구 + 카드 전체 */
+
+.eco_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* 메인 문구 */
+
+.eco_content h2 {
+    margin: 0 0 40px;
+
+    font-family: 'Pretendard', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.4;
+    color: #fff;
+
+    text-align: center;
+}
+
+
+/* 3개 영역 */
+
+.eco_list {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+
+    gap: 50px;
+}
+
+
+/* 각각 300 × 300 */
+
+.eco_item {
+    width: 300px;
+    height: 300px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* 추가 */
+
+    text-align: center;
+    box-sizing: border-box;
+}
+
+
+/* 로고 100 × 100 */
+
+.eco_icon {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.eco_icon img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+
+/* REFILL / REUSE / RECYCLE */
+
+.eco_item h3 {
+    margin: 0 0 10px;
+
+    font-family: 'Pretendard', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.4;
+    color: #fff;
+}
+
+
+/* 설명 */
+
+.eco_item p {
+    margin: 0;
+
+    font-family: 'Pretendard', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.5;
+    color: #fff;
+}
+
+
+
+
+
+/* ===========================================================
+footer
+=========================================================== */
+#footer {
+    width: 100%;
+    height: 350px;
+    background: #584539;
+}
+
+.footer_wrap {
+    width: 100%;
+    height: 100%;
+}
+
+.footer_inner {
+    width: 1320px;
+    height: 100%;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* logo */
+.footer_inner .logo {
+    margin: 0;
+    position: relative;
+    top: -75px;
+}
+
+.footer_inner .logo a {
+    display: block;
+}
+
+.footer_inner .logo img {
+    display: block;
+}
+
+
+/* 회사소개 + 고객센터 */
+.footer_info {
+    display: flex;
+    gap: 90px;
+
+    color: #FFFDF8;
+    font-family: 'Pretendard', sans-serif;
+}
+
+.footer_company,
+.footer_customer {
+    min-width: 120px;
+}
+
+.footer_company h3,
+.footer_customer h3 {
+    margin: 0 0 20px;
+
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.footer_company p,
+.footer_customer p {
+    margin: 0;
+
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+.footer_links {
+    margin-top: 12px;
+}
+
+.footer_links a {
+    display: block;
+
+    color: #FFFDF8;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+    text-decoration: none;
+}
+
+
+
+
+
+/* ==========================================================
+ TOP 버튼
+============================================================ */
+.top_btn {
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+    width: 50px;
+    height: 50px;
+    
+    border: 1px solid #584539;
+    border-radius: 50%;
+    background: #fffdf8;
+    color: #584539;
+    
+    font-family: 'Pretendard', sans-serif;
+    font-size: 13px;
+    cursor: pointer;
+    
+    z-index: 999;
+    
+    transition: all 0.3s ease;
+}
+
+.top_btn:hover {
+    background: #584539;
+    color: #fffdf8;
+    border: 1px solid #fffdf8;
+}
