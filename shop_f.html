@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1360">
+    <!-- 브라우저 뷰포트 너비를 1360px로 고정하여 페이지를 그리도록 설정 -->
+    <title>NOVE - Shop_f</title>
+
+    <!-- webfont 연결-->
+    <!-- font-family: 'Pretendard'; -->
+    <link rel="stylesheet" as="style" crossorigin
+        href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+
+    <!-- font-family: "Gelasio", serif; -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gelasio:ital,wght@0,400..700;1,400..700&display=swap"
+        rel="stylesheet">
+
+
+    <!-- 파비콘 연결 -->
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+
+    <!-- css 연결-->
+    <link rel="stylesheet" href="css/shop_f.css">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+</head>
+
+<body>
+
+    <div id="wrap">
+
+        <!-- header -->
+        <div class="header_container">
+
+            <div id="header_wrap">
+
+                <div class="header">
+
+                    <div class="nav_wrap">
+
+                        <h1 class="logo">
+                            <a href="./index.html">
+                                <img src="./images/logo.svg" alt="logo">
+                            </a>
+                        </h1>
+
+                        <div class="nav">
+                            <ul class="gnb">
+                                <li><a href="./brand.html">BRAND</a></li>
+                                <li><a href="./shop_f.html">SHOP</a></li>
+                                <li><a href="./index.html#event">EVENT</a></li>
+                                <li><a href="./index.html#notice">NOTICE</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                    <ul class="util">
+
+                        <li>
+                            <a href="#">
+                                <img src="./images/main/main_banner/icon/search.svg" alt="돋보기">
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <img src="./images/main/main_banner/icon/mypage.svg" alt="마이페이지">
+                            </a>
+                        </li>
+
+                        <li class="shopper">
+                            <a href="#">
+                                <img src="./images/main/main_banner/icon/bag.svg" alt="쇼핑백">
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+        <!-- header -->
+
+
+
+
+        <!-- intro -->
+
+        <section class="intro_section">
+
+            <!-- DAILY -->
+            <div class="intro_item" data-aos="fade-up" data-aos-delay="500">
+                <a href="#daily_line">
+                    <img src="./images/shop_f/intro/daily.png" alt="Daily">
+
+                    <div class="intro_overlay"></div>
+
+                    <div class="intro_content">
+                        <h2>DAILY</h2>
+
+                        <div class="intro_description">
+                            <h3>Gentle Every Day</h3>
+
+                            <span class="intro_line"></span>
+
+                            <p>
+                                매일의 피부에 부담 없이,<br>
+                                편안하게 이어가는 데일리 케어
+                            </p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- RECOVERY -->
+            <div class="intro_item" data-aos="fade-up" data-aos-delay="1000">
+                <a href="#recovery_line">
+                    <img src="./images/shop_f/intro/recovery.png" alt="Recovery">
+
+                    <div class="intro_overlay"></div>
+
+                    <div class="intro_content">
+                        <h2>RECOVERY</h2>
+
+                        <div class="intro_description">
+                            <h3>Calm Your Skin</h3>
+
+                            <span class="intro_line"></span>
+
+                            <p>
+                                예민해진 피부에<br>
+                                편안한 쉼을 더하는 진정 케어
+                            </p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- SUN -->
+            <div class="intro_item" data-aos="fade-up" data-aos-delay="1500">
+                <a href="#sun_line">
+                    <img src="./images/shop_f/intro/sun.png" alt="Sun">
+
+                    <div class="intro_overlay"></div>
+
+                    <div class="intro_content">
+                        <h2>SUN</h2>
+
+                        <div class="intro_description">
+                            <h3>Comfort In The Sun</h3>
+
+                            <span class="intro_line"></span>
+
+                            <p>
+                                햇빛 아래에서도<br>
+                                산뜻하고 편안하게 이어가는 선 케어
+                            </p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+        </section>
+
+        <!-- intro -->
+
+
+
+        <!-- item -->
+        <!-- Daily Line -->
+        <section id="daily_line">
+            <div class="line_inner">
+
+                <h2>DAILY LINE</h2>
+
+                <ul class="line_list">
+
+                    <!-- 1번 제품 -->
+                    <li class="line_item">
+                        <a href="./shop.html">
+                            <div class="line_img">
+                                <!-- 기본 이미지 -->
+                                <img class="img_default" src="./images/shop_f/item/1.png" alt="제품">
+
+                                <!-- 호버 이미지 -->
+                                <img class="img_hover" src="./images/shop_f/hover/1.png" alt="호버">
+                            </div>
+
+                            <div class="line_info">
+                                <p class="line_name">데일리 오트 약산성 버블폼</p>
+
+                                <p class="line_price">
+                                    <span>12%</span>
+                                    <del class="original_price">24,900원</del>
+                                    <strong>21,900원</strong>
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <!-- 2번 제품 -->
+                    <li class="line_item">
+                        <a href="#">
+                            <div class="line_img">
+                                <!-- 기본 이미지 -->
+                                <img class="img_default" src="./images/shop_f/item/2.png" alt="제품">
+
+                                <!-- 호버 이미지 -->
+                                <img class="img_hover" src="./images/shop_f/hover/2.png" alt="호버">
+                            </div>
+
+                            <div class="line_info">
+                                <p class="line_name">데일리 오트 안개 미스트 토너</p>
+
+                                <p class="line_price">
+                                    <span>12%</span>
+                                    <del class="original_price">26,000원</del>
+                                    <strong>22,900원</strong>
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <!-- 3번 제품 -->
+                    <li class="line_item">
+                        <a href="#">
+                            <div class="line_img">
+                                <!-- 기본 이미지 -->
+                                <img class="img_default" src="./images/shop_f/item/3.png" alt="제품">
+
+                                <!-- 호버 이미지 -->
+                                <img class="img_hover" src="./images/shop_f/hover/3.png" alt="호버">
+                            </div>
+
+                            <div class="line_info">
+                                <p class="line_name">데일리 오트 수분 세럼</p>
+
+                                <p class="line_price">
+                                    <span>12%</span>
+                                    <del class="original_price">30,600원</del>
+                                    <strong>26,900원</strong>
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <!-- 4번 제품 -->
+                    <li class="line_item">
+                        <a href="#">
+                            <div class="line_img">
+                                <!-- 기본 이미지 -->
+                                <img class="img_default" src="./images/shop_f/item/4.png" alt="제품">
+
+                                <!-- 호버 이미지 -->
+                                <img class="img_hover" src="./images/shop_f/hover/4.png" alt="호버">
+                            </div>
+
+                            <div class="line_info">
+                                <p class="line_name">데일리 오트 실리콘프리 크림</p>
+
+                                <p class="line_price">
+                                    <span>12%</span>
+                                    <del class="original_price">29,400원</del>
+                                    <strong>25,900원</strong>
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <!-- 5번 제품 -->
+                    <li class="line_item">
+                        <a href="#">
+                            <div class="line_img">
+                                <!-- 기본 이미지 -->
+                                <img class="img_default" src="./images/shop_f/item/5.png" alt="제품">
+
+                                <!-- 호버 이미지 -->
+                                <img class="img_hover" src="./images/shop_f/hover/5.png" alt="호버">
+                            </div>
+
+                            <div class="line_info">
+                                <p class="line_name">데일리 오트 약산성 버블폼 리필</p>
+
+                                <p class="line_price">
+                                    <span>12%</span>
+                                    <del class="original_price">24,900원</del>
+                                    <strong>17,900원</strong>
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <!-- 6번 제품 -->
+                    <li class="line_item">
+                        <a href="#">
+                            <div class="line_img">
+                                <!-- 기본 이미지 -->
+                                <img class="img_default" src="./images/shop_f/item/6.png" alt="제품">
+
+                                <!-- 호버 이미지 -->
+                                <img class="img_hover" src="./images/shop_f/hover/6.png" alt="호버">
+                            </div>
+
+                            <div class="line_info">
+                                <p class="line_name">데일리 오트 안개 미스트 토너 리필</p>
+
+                                <p class="line_price">
+                                    <span>12%</span>
+                                    <del class="original_price">26,000원</del>
+                                    <strong>19,900원</strong>
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <!-- 7번 제품 -->
+                    <li class="line_item">
+                        <a href="#">
+                            <div class="line_img">
+                                <!-- 기본 이미지 -->
+                                <img class="img_default" src="./images/shop_f/item/7.png" alt="제품">
+
+                                <!-- 호버 이미지 -->
+                                <img class="img_hover" src="./images/shop_f/hover/7.png" alt="호버">
+                            </div>
+
+                            <div class="line_info">
+                                <p class="line_name">데일리 오트 실리콘프리 크림 리필</p>
+
+                                <p class="line_price">
+                                    <span>12%</span>
+                                    <del class="original_price">29,400원</del>
+                                    <strong>22,900원</strong>
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </section>
+
+
+
+        <!-- Recovery Line -->
+        <section id="recovery_line">
+            <div class="line_inner">
+
+                <h2>RECOVERY LINE</h2>
+
+                <ul class="line_list">
+
+                    <!-- 8번 제품 -->
+                    <li class="line_item">
+                        <a href="#">
+                            <div class="line_img">
+                                <!-- 기본 이미지 -->
+                                <img class="img_default" src="./images/shop_f/item/8.png" alt="제품">
+
+                                <!-- 호버 이미지 -->
+                                <img class="img_hover" src="./images/shop_f/hover/8.png" alt="호버">
+                            </div>
+
+                            <div class="line_info">
+                                <p class="line_name">리커버리 쑥 약산성 버블폼</p>
+
+                                <p class="line_price">
+                                    <span>12%</span>
+                                    <del class="original_price">24,900원</del>
+                                    <strong>21,900원</strong>
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <!-- 9번 제품 -->
+                    <li class="line_item">
+                        <a href="#">
+                            <div class="line_img">
+                                <!-- 기본 이미지 -->
+                                <img class="img_default" src="./images/shop_f/item/9.png" alt="제품">
+
+                                <!-- 호버 이미지 -->
+                                <img class="img_hover" src="./images/shop_f/hover/9.png" alt="호버">
+                            </div>
+
+                            <div class="line_info">
+                                <p class="line_name">리커버리 쑥 안개 미스트 토너</p>
+
+                                <p class="line_price">
+                                    <span>12%</span>
+                                    <del class="original_price">26,000원</del>
+                                    <strong>22,900원</strong>
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <!-- 10번 제품 -->
+                    <li class="line_item">
+                        <a href="#">
+                            <div class="line_img">
+                                <!-- 기본 이미지 -->
+                                <img class="img_default" src="./images/shop_f/item/10.png" alt="제품">
+
+                                <!-- 호버 이미지 -->
+                                <img class="img_hover" src="./images/shop_f/hover/10.png" alt="호버">
+                            </div>
+
+                            <div class="line_info">
+                                <p class="line_name">리커버리 쑥 진정 세럼</p>
+
+                                <p class="line_price">
+                                    <span>12%</span>
+                                    <del class="original_price">30,600원</del>
+                                    <strong>26,900원</strong>
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <!-- 11번 제품 -->
+                    <li class="line_item">
+                        <a href="#">
+                            <div class="line_img">
+                                <!-- 기본 이미지 -->
+                                <img class="img_default" src="./images/shop_f/item/11.png" alt="제품">
+
+                                <!-- 호버 이미지 -->
+                                <img class="img_hover" src="./images/shop_f/hover/11.png" alt="호버">
+                            </div>
+
+                            <div class="line_info">
+                                <p class="line_name">리커버리 쑥 장벽 크림</p>
+
+                                <p class="line_price">
+                                    <span>12%</span>
+                                    <del class="original_price">29,400원</del>
+                                    <strong>25,900원</strong>
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <!-- 12번 제품 -->
+                    <li class="line_item">
+                        <a href="#">
+                            <div class="line_img">
+                                <!-- 기본 이미지 -->
+                                <img class="img_default" src="./images/shop_f/item/12.png" alt="제품">
+
+                                <!-- 호버 이미지 -->
+                                <img class="img_hover" src="./images/shop_f/hover/12.png" alt="호버">
+                            </div>
+
+                            <div class="line_info">
+                                <p class="line_name">리커버리 쑥 약산성 버블폼 리필</p>
+
+                                <p class="line_price">
+                                    <span>12%</span>
+                                    <del class="original_price">24,900원</del>
+                                    <strong>17,900원</strong>
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <!-- 13번 제품 -->
+                    <li class="line_item">
+                        <a href="#">
+                            <div class="line_img">
+                                <!-- 기본 이미지 -->
+                                <img class="img_default" src="./images/shop_f/item/13.png" alt="제품">
+
+                                <!-- 호버 이미지 -->
+                                <img class="img_hover" src="./images/shop_f/hover/13.png" alt="호버">
+                            </div>
+
+                            <div class="line_info">
+                                <p class="line_name">리커버리 쑥 안개 미스트 토너 리필</p>
+
+                                <p class="line_price">
+                                    <span>12%</span>
+                                    <del class="original_price">26,000원</del>
+                                    <strong>19,900원</strong>
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <!-- 14번 제품 -->
+                    <li class="line_item">
+                        <a href="#">
+                            <div class="line_img">
+                                <!-- 기본 이미지 -->
+                                <img class="img_default" src="./images/shop_f/item/14.png" alt="제품">
+
+                                <!-- 호버 이미지 -->
+                                <img class="img_hover" src="./images/shop_f/hover/14.png" alt="호버">
+                            </div>
+
+                            <div class="line_info">
+                                <p class="line_name">리커버리 쑥 장벽 크림 리필</p>
+
+                                <p class="line_price">
+                                    <span>12%</span>
+                                    <del class="original_price">29,400원</del>
+                                    <strong>22,900원</strong>
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </section>
+
+
+
+
+        <!-- Sun Line -->
+        <section id="sun_line">
+            <div class="line_inner">
+
+                <h2>SUN LINE</h2>
+
+                <ul class="line_list">
+
+                    <!-- 15번 제품 -->
+                    <li class="line_item">
+                        <a href="#">
+                            <div class="line_img">
+                                <!-- 기본 이미지 -->
+                                <img class="img_default" src="./images/shop_f/item/15.png" alt="제품">
+
+                                <!-- 호버 이미지 -->
+                                <img class="img_hover" src="./images/shop_f/hover/15.png" alt="호버">
+                            </div>
+
+                            <div class="line_info">
+                                <p class="line_name">블루베리 마일드 선크림</p>
+
+                                <p class="line_price">
+                                    <span>12%</span>
+                                    <del class="original_price">24,900원</del>
+                                    <strong>21,900원</strong>
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <!-- 16번 제품 -->
+                    <li class="line_item">
+                        <a href="#">
+                            <div class="line_img">
+                                <!-- 기본 이미지 -->
+                                <img class="img_default" src="./images/shop_f/item/16.png" alt="제품">
+
+                                <!-- 호버 이미지 -->
+                                <img class="img_hover" src="./images/shop_f/hover/16.png" alt="호버">
+                            </div>
+
+                            <div class="line_info">
+                                <p class="line_name">블루베리 마일드 선쿠션</p>
+
+                                <p class="line_price">
+                                    <span>12%</span>
+                                    <del class="original_price">28,300원</del>
+                                    <strong>24,900원</strong>
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <!-- 17번 제품 -->
+                    <li class="line_item">
+                        <a href="#">
+                            <div class="line_img">
+                                <!-- 기본 이미지 -->
+                                <img class="img_default" src="./images/shop_f/item/17.png" alt="제품">
+
+                                <!-- 호버 이미지 -->
+                                <img class="img_hover" src="./images/shop_f/hover/17.png" alt="호버">
+                            </div>
+
+                            <div class="line_info">
+                                <p class="line_name">블루베리 마일드 선크림</p>
+
+                                <p class="line_price">
+                                    <span>12%</span>
+                                    <del class="original_price">24,900원</del>
+                                    <strong>21,900원</strong>
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- item -->
+
+        <!-- TOP 버튼 -->
+        <button type="button" class="top_btn">TOP</button>
+
+
+
+
+
+        <!-- footer -->
+        <section id="footer">
+
+            <div class="footer_wrap">
+
+                <div class="footer_inner">
+
+                    <!-- logo -->
+                    <h1 class="logo">
+                        <a href="#">
+                            <img src="./images/footer_logo.svg" alt="Nove">
+                        </a>
+                    </h1>
+
+                    <!-- footer info -->
+                    <div class="footer_info">
+
+                        <!-- 회사소개 -->
+                        <div class="footer_company">
+                            <h3>회사소개</h3>
+
+                            <p>
+                                (주) 노브<br>
+                                대표 송미진<br>
+                                이메일 nove@nove.com
+                            </p>
+                        </div>
+
+                        <!-- 고객센터 -->
+                        <div class="footer_customer">
+                            <h3>고객센터</h3>
+
+                            <p>
+                                1551-4721<br>
+                                평일 09:00 - 18:00<br>
+                                점심시간 12:30 - 13:30<br>
+                                토·일 및 공휴일 휴무
+                            </p>
+
+                            <div class="footer_links">
+                                <a href="#">이용약관</a>
+                                <a href="#">개인정보처리방침</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+        <!-- footer -->
+
+
+
+
+
+
+
+        <script>
+            const topBtn = document.querySelector('.top_btn');
+
+            topBtn.addEventListener('click', function () {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+        </script>
+
+        <!-- 제이쿼리 오픈소스 연결 -->
+        <script src="js/jquery-4.0.0.min.js"></script>
+
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+        <script>
+            AOS.init({
+                duration: 1000,
+                once: true
+            });
+
+            let lastScrollY = 0;
+
+            const header = document.querySelector("#header_wrap");
+
+            window.addEventListener("scroll", function () {
+
+                const currentScrollY = window.scrollY;
+
+
+                /* ========================================
+                   맨 위
+                ======================================== */
+
+                if (currentScrollY <= 0) {
+
+                    header.classList.remove("scroll_header");
+                    header.classList.remove("hide");
+                    header.classList.remove("show");
+
+                    lastScrollY = 0;
+
+                    return;
+                }
+
+
+                /* ========================================
+                   스크롤 시작
+                ======================================== */
+
+                header.classList.add("scroll_header");
+
+
+                /* ========================================
+                   아래로 스크롤
+                ======================================== */
+
+                if (currentScrollY > lastScrollY) {
+
+                    header.classList.add("hide");
+                    header.classList.remove("show");
+
+                }
+
+
+                /* ========================================
+                   위로 스크롤
+                ======================================== */
+
+                else if (currentScrollY < lastScrollY) {
+
+                    header.classList.remove("hide");
+                    header.classList.add("show");
+
+                }
+
+
+                lastScrollY = currentScrollY;
+
+            });
+        </script>
+    </div>
+</body>
