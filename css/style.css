@@ -510,9 +510,9 @@ main_banner
 
 
 
-/* ============================================================
+/* ====================================================
    BEST ITEM
-============================================================ */
+==================================================== */
 
 #best {
     width: 1320px;
@@ -628,11 +628,11 @@ main_banner
 /* 상품명 */
 
 .best_name {
-    margin: 0 0 6px;
-
+    margin: 0 0 4px;
     font-family: 'Pretendard', sans-serif;
     font-size: 16px;
     font-weight: 400;
+    color: #333;
 }
 
 
@@ -650,21 +650,20 @@ main_banner
     font-weight: 700;
 }
 
+/* 할인, 판매가격 */
+.best_price span, strong {
+   color: #584539;
+    font-weight: 700;
+    font-size: 16px;
+}
+
 
 /* 원래 가격 */
 
 .best_price .original_price {
+    color: #777;
     font-size: 12px;
     font-weight: 400;
-    color: #777;
-}
-
-
-/* 판매 가격 */
-
-.best_price strong {
-    font-weight: 600;
-    color: #584539;
 }
 
 
