@@ -1,925 +1,850 @@
 <!DOCTYPE html>
-<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
-<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
-<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!-->
-<html lang="ko"> <!--<![endif]-->
+<html lang="ko">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1360">
+    <!-- 브라우저 뷰포트 너비를 1360px로 고정하여 페이지를 그리도록 설정 -->
+    <title>노브 NOVE</title>
 
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <!-- webfont 연결-->
+    <!-- font-family: 'Pretendard'; -->
+    <link rel="stylesheet" as="style" crossorigin
+        href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
 
-	<link rel="icon" type="image/png" href="img/favicon.png" />
-
-	<meta name="description" content="Name of your web site">
-	<meta name="author" content="Marketify">
-
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
-	<title>Portfolio</title>
-	<!-- 웹폰트 연결 -->
-	<!-- font-family: "Nova Square", sans-serif; -->
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Nova+Square&display=swap" rel="stylesheet">
-
-	<!-- STYLES -->
-	<link
-		href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-		rel="stylesheet">
+    <!-- font-family: "Gelasio", serif; -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gelasio:ital,wght@0,400..700;1,400..700&display=swap"
+        rel="stylesheet">
 
 
-	<link rel="stylesheet" type="text/css" href="css/plugins.css" />
-	<link rel="stylesheet" type="text/css" href="css/colors.css" />
-	<link rel="stylesheet" type="text/css" href="css/darkMode.css" />
-	<link rel="stylesheet" type="text/css" href="css/style.css" />
-	<!--[if lt IE 9]> <script type="text/javascript" src="js/modernizr.custom.js"></script> <![endif]-->
-	<!-- /STYLES -->
+    <!-- 파비콘 연결 -->
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
 
+    <!-- css 연결-->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
 </head>
 
-<body> <!-- FOR DARK MODE: Add class "dark" Example: <body class="dark"> -->
-
-	<!-- PRELOADER -->
-	<div id="preloader">
-		<div class="loader_line"></div>
-	</div>
-	<!-- /PRELOADER -->
-
-	<!-- WRAPPER ALL -->
-	<div class="grax_tm_all_wrap" data-magic-cursor="" data-color="crimson">
-
-		<!-- MAGIC CURSOR VALUES: "", hide -->
-		<!-- COLOR VALUES: blue, green, brown, pink, orange, black, white, purple, sky, cadetBlue, crimson, olive, red -->
-
-
-
-		<!-- MODALBOX NEWS -->
-		<!-- <div class="grax_tm_modalbox_news">
-			<div class="box_inner">
-				<div class="close">
-					<a href="#"><img class="svg" src="img/svg/cancel.svg" alt="" /></a>
-				</div>
-				<div class="description_wrap scrollable">
-				</div>
-			</div>
-		</div> -->
-		<!-- /MODALBOX NEWS -->
-
-		<!-- TOPBAR -->
-		<div class="grax_tm_topbar">
-			<div class="container">
-				<div class="topbar_inner">
-					<div class="logo">
-						<p>Portfolio</p>
-					</div>
-					<div class="menu">
-						<ul class="anchor_nav">
-							<li class="current"><a href="#home">Home</a></li>
-							<li><a href="#about">About</a></li>
-							<li><a href="#portfolio">Portfolio</a></li>
-							<li><a href="#artwork">Artwork</a></li>
-							<li><a href="#contact">Contact</a></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- /TOPBAR -->
-
-		<!-- MOBILE MENU -->
-		<div class="grax_tm_mobile_menu">
-			<div class="topbar_inner">
-				<div class="container bigger">
-					<div class="topbar_in">
-						<div class="logo">
-							<p>Portfolio</p>
-						</div>
-						<div class="my_trigger">
-							<div class="hamburger hamburger--collapse-r">
-								<div class="hamburger-box">
-									<div class="hamburger-inner"></div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="dropdown">
-				<div class="container">
-					<div class="dropdown_inner">
-						<ul class="anchor_nav">
-							<li><a href="#home">Home</a></li>
-							<li><a href="#about">About</a></li>
-							<li><a href="#portfolio">Portfolio</a></li>
-							<li><a href="#artwork">Artwork</a></li>
-							<li><a href="#contact">Contact</a></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- /MOBILE MENU -->
-
-
-
-		<!-- HERO -->
-		<div class="grax_tm_hero" id="home">
-			<div class="bg">
-				<video autoplay muted loop playsinline class="image">
-					<source src="./img/main/main.mp4" type="video/mp4">
-				</video>
-			</div>
-		</div>
-		<!-- /HERO -->
-
-
-
-
-		<!-- ABOUT -->
-		<div class="grax_tm_section" id="about">
-			<div class="grax_tm_about">
-				<div class="container">
-					<div class="about_inner">
-
-						<!-- LEFT : VIDEO -->
-						<div class="left wow fadeInLeft" data-wow-duration="1.5s">
-							<div class="image about_video">
-								<video autoplay muted loop playsinline>
-									<source src="./img/about/me.mp4" type="video/mp4">
-								</video>
-							</div>
-						</div>
-
-						<!-- RIGHT : ABOUT ME -->
-						<div class="right wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay=".2s">
-
-							<div class="grax_tm_title_holder">
-								<h3>About <span>Me</span></h3>
-							</div>
-
-							<div class="text">
-								<p>
-									더 나은 결과물을 만들기 위해 디자인의 방향을 고민하고,
-									생각한 것을 직접 만들어가는 디자이너입니다.
-									보기 좋은 디자인을 넘어 브랜드가 전하고자 하는 내용을 어떻게 표현할지, 사용자가 이용하기에 불편함은 없는지 함께 고민합니다.
-									기획부터 디자인, 웹 구현까지 다양한 과정을 경험하며 아이디어를 구체적인 결과물로 발전시켜 나갑니다.
-								</p>
-							</div>
-
-							<!-- MY STRENGTHS -->
-							<div class="list">
-								<ul>
-									<li>
-										<div class="list_inner">
-											<img class="svg" src="./img/svg/checked.svg" alt="화살표">
-											<span>Attention to Detail</span>
-										</div>
-									</li>
-
-									<li>
-										<div class="list_inner">
-											<img class="svg" src="./img/svg/checked.svg" alt="화살표">
-											<span>Purposeful Thinking</span>
-										</div>
-									</li>
-
-									<li>
-										<div class="list_inner">
-											<img class="svg" src="./img/svg/checked.svg" alt="화살표">
-											<span>AI-Assisted Design</span>
-										</div>
-									</li>
-
-									<li>
-										<div class="list_inner">
-											<img class="svg" src="./img/svg/checked.svg" alt="화살표">
-											<span>Web Design &amp; Publishing</span>
-										</div>
-									</li>
-								</ul>
-							</div>
-
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- /ABOUT -->
-
-
-
-
-
-		<!-- PORTFOLIO -->
-		<div class="grax_tm_section" id="portfolio">
-			<div class="grax_tm_news">
-				<div class="container">
-					<div class="grax_tm_title_holder">
-						<h3>Branding <span>Portfolio</span></h3>
-					</div>
-					<div class="news_list">
-						<ul>
-							<li class="wow fadeInLeft" data-wow-duration="1.5s">
-								<div class="list_inner">
-									<a href="https://jinmichaeda-png.github.io/Nove/" target="_blank">
-										<div class="image site_video">
-											<video muted loop playsinline preload="metadata">
-												<source src="./img/portfolio/site.mp4" type="video/mp4">
-											</video>
-										</div>
-
-										<div class="details">
-											<h3 class="title">
-												<a href="javascript:return false;">Web Site</a>
-											</h3>
-											<p>브랜드 설명글</p>
-											<p class="date">
-												By <a href="javascript:return false;">제작자</a>
-												<span>01 January 2025</span>
-											</p>
-										</div>
-									</a>
-								</div>
-							</li>
-
-							<li class="wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay=".2s">
-								<div class="list_inner">
-									<a href="./sub/bp.html" target="_blank">
-										<div class="image site_video">
-											<video muted loop playsinline preload="metadata">
-												<source src="./img/portfolio/planning.mp4" type="video/mp4">
-											</video>
-										</div>
-
-										<div class="details">
-											<h3 class="title">
-												<a href="javascript:return false;">Brand Planning</a>
-											</h3>
-											<p>브랜드 설명글</p>
-											<p class="date">
-												By <a href="javascript:return false;">제작자</a>
-												<span>01 January 2025</span>
-											</p>
-										</div>
-									</a>
-								</div>
-							</li>
-
-							<li class="wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay=".4s">
-								<div class="list_inner">
-									<a href="./sub/mu.html" target="_blank">
-										<div class="image site_video">
-											<video muted loop playsinline preload="metadata">
-												<source src="./img/portfolio/mockup.mp4" type="video/mp4">
-											</video>
-										</div>
-
-										<div class="details">
-											<h3 class="title">
-												<a href="javascript:return false;">Mockup</a>
-											</h3>
-											<p>브랜드 설명글</p>
-											<p class="date">
-												By <a href="javascript:return false;">제작자</a>
-												<span>01 January 2025</span>
-											</p>
-										</div>
-									</a>
-								</div>
-							</li>
-
-							<li class="wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay=".6s">
-								<div class="list_inner">
-									<a href="" target="_blank">
-										<div class="image site_video">
-											<video muted loop playsinline preload="metadata">
-												<source src="./img/portfolio/guide.mp4" type="video/mp4">
-											</video>
-										</div>
-
-										<div class="details">
-											<h3 class="title">
-												<a href="javascript:return false;">Web Guide</a>
-											</h3>
-											<p>브랜드 설명글</p>
-											<p class="date">
-												By <a href="javascript:return false;">제작자</a>
-												<span>01 January 2025</span>
-											</p>
-										</div>
-									</a>
-								</div>
-							</li>
-
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- PORTFOLIO -->
-
-
-		<!-- ARTWORK -->
-		<div class="grax_tm_section" id="artwork">
-			<div class="grax_tm_portfolio">
-				<div class="container">
-					<div class="grax_tm_title_holder">
-						<h3>Art <span>Works</span></h3>
-					</div>
-					<div class="portfolio_list">
-						<ul class="gallery_zoom my_waypoint">
-							<!-- 1번 -->
-							<li class="wow fadeInLeft artwork-card busan-card" data-wow-duration="1.5s">
-
-
-								<div class="list_inner">
-									<div class="image">
-										<img src="./img/artwork/main.png" alt="부산 축제 카드뉴스">
-										<div class="main" style="background-image: url('./img/artwork/main.png');">
-										</div>
-									</div>
-
-									<div class="overlay"></div>
-
-									<div class="details">
-										<span>카드뉴스</span>
-										<h3>Busan Festival</h3>
-									</div>
-
-									<!-- 첫 번째 이미지: 카드 전체 클릭 -->
-									<a class="grax_tm_full_link zoom" href="./img/artwork/1.png"></a>
-
-									<!-- 나머지 이미지는 갤러리용으로 숨김 -->
-									<div class="artwork_gallery" style="display: none;">
-										<a class="zoom" href="./img/artwork/2.png"></a>
-										<a class="zoom" href="./img/artwork/3.png"></a>
-										<a class="zoom" href="./img/artwork/4.png"></a>
-										<a class="zoom" href="./img/artwork/5.png"></a>
-										<a class="zoom" href="./img/artwork/6.png"></a>
-									</div>
-								</div>
-
-							</li>
-
-							<!-- 2번 -->
-							<li class="wow fadeInLeft artwork-card" data-wow-duration="1.5s" data-wow-delay=".2s">
-								<div class="list_inner">
-									<div class="image">
-										<img src="./img/artwork/7.png" alt="치이카와">
-										<div class="main" style="background-image: url('./img/artwork/7.png');"></div>
-									</div>
-
-									<div class="overlay"></div>
-
-									<div class="details">
-										<span>카드뉴스</span>
-										<h3>Chiikawa</h3>
-									</div>
-
-									<!-- 첫 번째 이미지: 카드 전체 클릭 -->
-									<a class="grax_tm_full_link zoom" href="./img/artwork/7.png"></a>
-
-									<!-- 나머지 이미지는 갤러리용으로 숨김 -->
-									<div class="artwork_gallery" style="display: none;">
-										<a class="zoom" href="./img/artwork/8.png"></a>
-										<a class="zoom" href="./img/artwork/9.png"></a>
-										<a class="zoom" href="./img/artwork/10.png"></a>
-										<a class="zoom" href="./img/artwork/11.png"></a>
-										<a class="zoom" href="./img/artwork/12.png"></a>
-										<a class="zoom" href="./img/artwork/13.png"></a>
-										<a class="zoom" href="./img/artwork/14.png"></a>
-									</div>
-								</div>
-							</li>
-
-							<!-- 3번 -->
-							<li class="wow fadeInLeft artwork-card" data-wow-duration="1.5s" data-wow-delay=".4s">
-								<div class="list_inner">
-									<div class="image">
-										<img src="./img/artwork/7.png" alt="치이카와">
-										<div class="main" style="background-image: url('./img/artwork/7.png');"></div>
-									</div>
-
-									<div class="overlay"></div>
-
-									<div class="details">
-										<span>카드뉴스</span>
-										<h3>Chiikawa</h3>
-									</div>
-
-									<!-- 첫 번째 이미지: 카드 전체 클릭 -->
-									<a class="grax_tm_full_link zoom" href="./img/artwork/7.png"></a>
-
-									<!-- 나머지 이미지는 갤러리용으로 숨김 -->
-									<div class="artwork_gallery" style="display: none;">
-										<a class="zoom" href="./img/artwork/8.png"></a>
-										<a class="zoom" href="./img/artwork/9.png"></a>
-										<a class="zoom" href="./img/artwork/10.png"></a>
-										<a class="zoom" href="./img/artwork/11.png"></a>
-										<a class="zoom" href="./img/artwork/12.png"></a>
-										<a class="zoom" href="./img/artwork/13.png"></a>
-										<a class="zoom" href="./img/artwork/14.png"></a>
-									</div>
-								</div>
-							</li>
-
-							<!-- 4번 -->
-							<li class="wow fadeInLeft artwork-card" data-wow-duration="1.5s" data-wow-delay=".6s">
-								<div class="list_inner">
-									<div class="image">
-										<img src="./img/artwork/u_main.png" alt="젠지 유니폼">
-										<div class="main" style="background-image: url('./img/artwork/u_main.png');"></div>
-									</div>
-
-									<div class="overlay"></div>
-
-									<div class="details">
-										<span>상세페이지</span>
-										<h3>GEN.G WORLDS UNIFORM</h3>
-									</div>
-									<!-- 카드 전체 클릭: 피그마 링크 연결 -->
-									<a class="grax_tm_full_link"
-										href="https://www.figma.com/proto/gTTSr1OMtVOBOQmv3u5cEC/%EC%A0%A0%EC%A7%80-2026-%EC%9B%94%EC%A6%88-%EC%9C%A0%EB%8B%88%ED%8F%BC?node-id=1-2&p=f&viewport=663%2C60%2C0.08&t=b23ujLsDY5EIY7uY-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=1%3A2&page-id=0%3A1"
-										target="_blank" rel="noopener noreferrer">
-									</a>
-
-								</div>
-							</li>
-
-							<!-- 5번 -->
-							<li class="wow fadeInLeft artwork-card" data-wow-duration="1.5s" data-wow-delay=".8s">
-								<div class="list_inner">
-									<div class="image">
-										<img src="./img/artwork/7.png" alt="치이카와">
-										<div class="main" style="background-image: url('./img/artwork/7.png');"></div>
-									</div>
-
-									<div class="overlay"></div>
-
-									<div class="details">
-										<span>카드뉴스</span>
-										<h3>Chiikawa</h3>
-									</div>
-
-									<!-- 첫 번째 이미지: 카드 전체 클릭 -->
-									<a class="grax_tm_full_link zoom" href="./img/artwork/7.png"></a>
-
-									<!-- 나머지 이미지는 갤러리용으로 숨김 -->
-									<div class="artwork_gallery" style="display: none;">
-										<a class="zoom" href="./img/artwork/8.png"></a>
-										<a class="zoom" href="./img/artwork/9.png"></a>
-										<a class="zoom" href="./img/artwork/10.png"></a>
-										<a class="zoom" href="./img/artwork/11.png"></a>
-										<a class="zoom" href="./img/artwork/12.png"></a>
-										<a class="zoom" href="./img/artwork/13.png"></a>
-										<a class="zoom" href="./img/artwork/14.png"></a>
-									</div>
-								</div>
-							</li>
-
-							<!-- 6번 -->
-							<li class="wow fadeInLeft artwork-card" data-wow-duration="1.5s" data-wow-delay=".8s">
-								<div class="list_inner">
-									<div class="image">
-										<img src="./img/artwork/7.png" alt="치이카와">
-										<div class="main" style="background-image: url('./img/artwork/7.png');"></div>
-									</div>
-
-									<div class="overlay"></div>
-
-									<div class="details">
-										<span>카드뉴스</span>
-										<h3>Chiikawa</h3>
-									</div>
-
-									<!-- 첫 번째 이미지: 카드 전체 클릭 -->
-									<a class="grax_tm_full_link zoom" href="./img/artwork/7.png"></a>
-
-									<!-- 나머지 이미지는 갤러리용으로 숨김 -->
-									<div class="artwork_gallery" style="display: none;">
-										<a class="zoom" href="./img/artwork/8.png"></a>
-										<a class="zoom" href="./img/artwork/9.png"></a>
-										<a class="zoom" href="./img/artwork/10.png"></a>
-										<a class="zoom" href="./img/artwork/11.png"></a>
-										<a class="zoom" href="./img/artwork/12.png"></a>
-										<a class="zoom" href="./img/artwork/13.png"></a>
-										<a class="zoom" href="./img/artwork/14.png"></a>
-									</div>
-								</div>
-							</li>
-						</ul>
-					</div>
-
-
-
-
-					<!-- REELS & SHORTS -->
-					<div class="artwork_video">
-
-						<!-- TITLE -->
-						<div class="grax_tm_title_holder">
-							<h3>Reels <span>&amp;</span> Shorts</h3>
-						</div>
-
-						<!-- VIDEO LIST -->
-						<div class="video_list">
-
-							<!-- VIDEO 01 -->
-							<div class="video_item">
-								<div class="video_link">
-									<div class="video_thumb">
-										<video muted loop playsinline preload="metadata">
-											<source src="./img/reels/nove.mp4" type="video/mp4">
-										</video>
-
-										<div class="video_overlay">
-											<span class="play_icon">▶</span>
-										</div>
-									</div>
-
-									<div class="video_info">
-										<h4>NOVE</h4>
-										<span>01 블루베리와 바다의 청량함을 담아낸 NOVE 선크림 광고 영상.</span>
-										
-									</div>
-								</div>
-							</div>
-
-							<!-- VIDEO 02 -->
-							<div class="video_item">
-								<div class="video_link">
-									<div class="video_thumb">
-										<video muted loop playsinline preload="metadata">
-											<source src="./img/reels/uniform.mp4" type="video/mp4">
-										</video>
-
-										<div class="video_overlay">
-											<span class="play_icon">▶</span>
-										</div>
-									</div>
-
-									<div class="video_info">
-										<h4>GEN.G</h4>
-										<span>02 젠지의 아이덴티티를 담아낸 2026 월즈 유니폼 광고 영상.</span>
-										
-									</div>
-								</div>
-							</div>
-
-							<!-- VIDEO 03 -->
-							<div class="video_item">
-								<div class="video_link">
-									<div class="video_thumb">
-										<video muted loop playsinline preload="metadata">
-											<source src="./img/reels/tokyo.mp4" type="video/mp4">
-										</video>
-
-										<div class="video_overlay">
-											<span class="play_icon">▶</span>
-										</div>
-									</div>
-
-									<div class="video_info">
-										<h4>Video Title 03</h4>
-										<span>03 / VIDEO CONTENTS</span>
-										
-									</div>
-								</div>
-							</div>
-
-						</div>
-					</div>
-					<!-- /REELS & SHORTS -->
-
-					<!-- VIDEO PLAY SCRIPT -->
-					<script>
-						document.querySelectorAll('#artwork .video_thumb').forEach(function (thumb) {
-							const video = thumb.querySelector('video');
-							const playIcon = thumb.querySelector('.play_icon');
-
-							if (!video) return;
-
-							thumb.style.cursor = 'pointer';
-
-							thumb.addEventListener('click', function () {
-								if (video.paused) {
-									video.play().then(function () {
-										thumb.classList.add('is-playing');
-										if (playIcon) playIcon.textContent = 'Ⅱ';
-									}).catch(function (error) {
-										console.error('영상 재생에 실패했습니다:', error);
-									});
-								} else {
-									video.pause();
-									thumb.classList.remove('is-playing');
-									if (playIcon) playIcon.textContent = '▶';
-								}
-							});
-
-							video.addEventListener('ended', function () {
-								thumb.classList.remove('is-playing');
-								if (playIcon) playIcon.textContent = '▶';
-							});
-						});
-					</script>
-
-
-				</div>
-			</div>
-		</div>
-		<!-- ARTWORK -->
-
-
-
-
-
-
-		<!-- PROGRESS -->
-		<div class="grax_tm_progress_part">
-			<div class="container">
-				<div class="part_inner">
-					<div class="left wow fadeInLeft" data-wow-duration="1.5s">
-						<h3>Design & Digital Experiences</h3>
-						<p>다양한 디자인 도구를 활용해 아이디어를 시각화하고, 브랜드의 개성과 사용성을 고려한 웹 디자인을 구현합니다. 기획부터 디자인, 웹 퍼블리싱까지 연결하며 완성도 있는
-							결과물을 만들어 갑니다.</p>
-					</div>
-					<div class="right wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay=".2s">
-						<div class="kioto_progress">
-							<div class="progress_inner" data-value="75">
-								<span><span class="label">Graphic Design</span><span class="number">75%</span></span>
-								<div class="background">
-									<div class="bar">
-										<div class="bar_in"></div>
-									</div>
-								</div>
-							</div>
-							<div class="progress_inner" data-value="85">
-								<span><span class="label">UI/UX Design</span><span class="number">85%</span></span>
-								<div class="background">
-									<div class="bar">
-										<div class="bar_in"></div>
-									</div>
-								</div>
-							</div>
-							<div class="progress_inner" data-value="80">
-								<span><span class="label">Web Publishing</span><span class="number">80%</span></span>
-								<div class="background">
-									<div class="bar">
-										<div class="bar_in"></div>
-									</div>
-								</div>
-							</div>
-							<div class="progress_inner" data-value="65">
-								<span><span class="label">Motion & Video</span><span class="number">65%</span></span>
-								<div class="background">
-									<div class="bar">
-										<div class="bar_in"></div>
-									</div>
-								</div>
-							</div>
-							<div class="progress_inner" data-value="90">
-								<span><span class="label">AI-Assisted Design</span><span
-										class="number">90%</span></span>
-								<div class="background">
-									<div class="bar">
-										<div class="bar_in"></div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- /PROGRESS -->
-
-
-		<!-- TALK -->
-		<div class="grax_tm_section">
-			<div class="grax_tm_talk talk_star_bg">
-				<canvas id="talk-stars"></canvas>
-
-				<div class="container">
-					<div class="talk_inner">
-						<div class="text wow fadeInLeft" data-wow-duration="1.5s">
-							<h3><span>I'm available for freelance work</span></h3>
-						</div>
-						<div class="button wow fadeInLeft anchor" data-wow-duration="1.5s" data-wow-delay=".2s">
-							<a href="#contact">Contact Me</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- /TALK -->
-
-
-
-
-		<!-- CONTACT -->
-		<div class="grax_tm_contact" id="contact">
-			<div class="container">
-				<div class="grax_tm_title_holder">
-					<h3>Get in <span>Touch</span></h3>
-				</div>
-				<div class="contact_inner">
-					<div class="left wow fadeInLeft" data-wow-duration="1s">
-						<div class="info_list">
-							<ul>
-								<li>
-									<div class="list_inner">
-										<img class="svg" src="img/svg/phone.svg" alt="" />
-										<p><span class="first">Phone:</span><span class="second"><a href="#">+82
-													10-5164-3938</a></span></p>
-									</div>
-								</li>
-								<li>
-									<div class="list_inner">
-										<img class="svg" src="img/svg/email.svg" alt="" />
-										<p><span class="first">Email:</span><span class="second"><a
-													href="#">mijin5754@gmail.com</a></span></p>
-									</div>
-								</li>
-								<li>
-									<div class="list_inner">
-										<img class="svg" src="./img/svg/insta.svg" alt="" />
-										<p><span class="first">Instagram:</span><span class="second"><a
-													href="#">@Pf5754</a></span></p>
-									</div>
-								</li>
-							</ul>
-						</div>
-					</div>
-					<!-- <div class="right wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".2s">
-						<div class="fields">
-							<form action="/" method="post" class="contact_form" id="contact_form">
-								<div class="returnmessage"
-									data-success="Your message has been received, We will contact you soon."></div>
-								<div class="empty_notice"><span>Please Fill Required Fields</span></div>
-								<div class="first">
-									<ul>
-										<li>
-											<input id="name" type="text" placeholder="Name">
-										</li>
-										<li>
-											<input id="email" type="text" placeholder="Email">
-										</li>
-									</ul>
-								</div>
-								<div class="last">
-									<textarea id="message" placeholder="Message"></textarea>
-								</div>
-								<div class="grax_tm_button">
-									<a id="send_message" href="#">Send Message</a>
-								</div>
-
-		
-
-							</form>
-						</div>
-					</div> -->
-				</div>
-			</div>
-		</div>
-		<!-- /CONTACT -->
-
-		<!-- COPYRIGHT -->
-		<div class="grax_tm_section">
-			<div class="grax_tm_copyright">
-				<div class="my_wave">
-					<svg width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg">
-						<defs></defs>
-						<path id="wave_img" data-color="#fff"
-							d="M 0 185.609 C 317.16666666666663 118.136 317.16666666666663 118.136 634.3333333333333 151.87 C 951.4999999999999 185.609 951.4999999999999 185.609 1268.6666666666665 116.402 C 1585.833333333333 47.195 1585.833333333333 47.195 1903 131.925 L 1903 507 L 0 507 Z"
-							fill="#fff"></path>
-					</svg>
-				</div>
-				<div class="container">
-					<div class="copyright_inner">
-						<div class="logo wow fadeInLeft" data-wow-duration="1s">
-							<p>Portfolio</p>
-						</div>
-						<div class="social wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".2s">
-							<ul>
-								<li><a href="#"><img class="svg" src="img/svg/social/facebook.svg" alt="" /></a></li>
-								<li><a href="#"><img class="svg" src="img/svg/social/twitter.svg" alt="" /></a></li>
-								<li><a href="#"><img class="svg" src="img/svg/social/dribbble.svg" alt="" /></a></li>
-								<li><a href="#"><img class="svg" src="img/svg/social/tik-tok.svg" alt="" /></a></li>
-								<!-- You can download another svg icons from here for free https://www.flaticon.com -->
-							</ul>
-						</div>
-						<div class="copy wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".4s">
-							<p>&copy; Copyright 2026 by 송미진</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- /COPYRIGHT -->
-
-		<!-- CURSOR -->
-		<div class="mouse-cursor cursor-outer"></div>
-		<div class="mouse-cursor cursor-inner"></div>
-		<!-- /CURSOR -->
-
-		<!-- START: Page Progress -->
-		<div class="progressbar">
-			<a href="#"><span class="text">To Top</span></a>
-			<span class="line"></span>
-		</div>
-		<!-- END: Page Progress -->
-
-	</div>
-	<!-- / WRAPPER ALL -->
-
-	<!-- SCRIPTS -->
-	<script src="js/jquery.js"></script>
-	<!--[if lt IE 10]> <script type="text/javascript" src="js/ie8.js"></script> <![endif]-->
-	<script src="js/plugins.js"></script>
-	<script src="js/init.js"></script>
-	<!-- /SCRIPTS -->
-
-	<!-- 포트폴리오 부분 호버하면 영상 재생 -->
-	<script>
-		document.querySelectorAll('.site_video video').forEach(function (video) {
-			video.addEventListener('mouseenter', function () {
-				video.play();
-			});
-
-			video.addEventListener('mouseleave', function () {
-				video.pause();
-				video.currentTime = 0;
-			});
-		});
-	</script>
-
-	<!-- TALK 부분 별 배경 -->
-	<script>
-		(function () {
-			const canvas = document.getElementById('talk-stars');
-			if (!canvas) return;
-
-			const ctx = canvas.getContext('2d');
-			const section = canvas.parentElement;
-
-			let stars = [];
-			let width = 0;
-			let height = 0;
-
-			function resizeCanvas() {
-				const rect = section.getBoundingClientRect();
-				const dpr = Math.min(window.devicePixelRatio || 1, 2);
-
-				width = rect.width;
-				height = rect.height;
-
-				canvas.width = width * dpr;
-				canvas.height = height * dpr;
-				ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
-
-				const count = Math.min(
-					200,
-					Math.max(70, Math.floor(width * height / 1800))
-				);
-
-				stars = Array.from({ length: count }, function () {
-					return {
-						x: Math.random() * width,
-						y: Math.random() * height,
-						radius: Math.random() * 1.3 + 0.3,
-						phase: Math.random() * Math.PI * 2,
-						speed: Math.random() * 1.5 + 0.5
-					};
-				});
-			}
-
-			function animate(time) {
-				ctx.clearRect(0, 0, width, height);
-
-				stars.forEach(function (star) {
-					const flicker =
-						0.2 + 0.8 * ((Math.sin(time * 0.001 * star.speed + star.phase) + 1) / 2);
-
-					ctx.beginPath();
-					ctx.arc(star.x, star.y, star.radius, 0, Math.PI * 2);
-					ctx.fillStyle = 'rgba(216,198,255,' + flicker + ')';
-					ctx.shadowBlur = 4;
-					ctx.shadowColor = '#A982FF';
-					ctx.fill();
-				});
-
-				ctx.shadowBlur = 0;
-				requestAnimationFrame(animate);
-			}
-
-			resizeCanvas();
-			window.addEventListener('resize', resizeCanvas);
-			requestAnimationFrame(animate);
-		})();
-	</script>
+<body>
+    <div id="wrap">
+
+        <!-- header -->
+        <div class="header_container">
+
+            <div id="header_wrap">
+
+                <div class="header">
+
+                    <div class="nav_wrap">
+
+                        <h1 class="logo">
+                            <a href="index.html">
+                                <img src="./images/logo.svg" alt="logo">
+                            </a>
+                        </h1>
+
+                        <div class="nav">
+                            <ul class="gnb">
+                                <li><a href="./brand.html">BRAND</a></li>
+                                <li><a href="./shop_a.html">SHOP</a></li>
+                                <li><a href="#event">EVENT</a></li>
+                                <li><a href="#notice">NOTICE</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                    <ul class="util">
+
+                        <li>
+                            <a href="#">
+                                <img src="./images/main/main_banner/icon/search.svg" alt="돋보기">
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <img src="./images/main/main_banner/icon/mypage.svg" alt="마이페이지">
+                            </a>
+                        </li>
+
+                        <li class="shopper">
+                            <a href="#">
+                                <img src="./images/main/main_banner/icon/bag.svg" alt="쇼핑백">
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+        <!-- header -->
+
+    </div>
+
+
+    <!-- main_banner -->
+    <!-- Swiper -->
+    <div id="slide1">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="./images/main/main_banner/banner/main1.jpg" alt="메인">
+
+                    <div class="text_box">
+                        <p class="banner_tit">Daily Line</p>
+                        <p class="banner_txt">
+                            하루의 시작과 끝, 부드럽게 씻어내고 편안함은 남기도록
+                            <br>
+                            매일 만나는 데일리 오트 약산성 버블폼
+                        </p>
+                        <a href="#" class="banner_btn">View More</a> <!-- 인라인 블락으로 -->
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./images/main/main_banner/banner/main2.png" alt="메인">
+
+                    <div class="text_box">
+                        <p class="banner_tit">Daily Line</p>
+                        <p class="banner_txt">
+                            안개처럼 부드럽게 닿아, 건조한 순간마다 촉촉하게
+                            <br>
+                            피부가 먼저 찾는 데일리 오트 안개 미스트
+                        </p>
+                        <a href="#" class="banner_btn">View More</a> <!-- 인라인 블락으로 -->
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./images/main/main_banner/banner/main3.png" alt="메인">
+
+                    <div class="text_box">
+                        <p class="banner_tit">Recovery Line</p>
+                        <p class="banner_txt">
+                            예민해진 피부에 편안한 쉼을, 순하게 다독이도록
+                            <br>
+                            리커버리 쑥 진정 세럼
+                        </p>
+                        <a href="#" class="banner_btn">View More</a> <!-- 인라인 블락으로 -->
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./images/main/main_banner/banner/main4.png" alt="메인">
 
+                    <div class="text_box">
+                        <p class="banner_tit">Sun Line</p>
+                        <p class="banner_txt">
+                            햇빛을 마주하는 순간에도, 피부의 편안함을 그대로
+                            <br>
+                            부담 없이 바르는 블루베리 마일드 선크림
+                        </p>
+                        <a href="#" class="banner_btn">View More</a> <!-- 인라인 블락으로 -->
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
 
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper('.mySwiper', {
+            spaceBetween: 30,
+
+            loop: true,
+
+            autoplay: {
+                delay: 4500, // 4.5초마다 다음 슬라이드
+                disableOnInteraction: false, // 마우스로 넘겨도 자동재생 유지
+            },
+
+            speed: 1200, // 슬라이드 이동 속도
+
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        });
+    </script>
+    <!-- main_banner -->
+
+
+
+
+    <!-- brand 소개 -->
+    <div id="brand">
+
+        <!-- 브랜드 소개 문구 -->
+        <p class="brand_intro" data-aos="fade-up">
+            Built with honesty. Completed by trust.
+            <br>
+            <strong>정직함으로 만들고, 신뢰로 완성되다.</strong>
+        </p>
+
+
+        <ul class="brand_img">
+
+            <!-- Honest -->
+            <li data-aos="fade-up" data-aos-delay="500">
+
+                <img class="img_default" src="./images/main/main_banner/brand/hover1.png" alt="Honest">
+
+                <img class="img_hover" src="./images/main/main_banner/brand/honest.png" alt="Honest">
+
+                <p class="brand_title">
+                    <span class="brand_eng">Honest</span>
+                    <br>
+                    <span class="brand_nove">Nove</span>
+                    <span class="brand_kor">의 기준</span>
+                </p>
+
+                <span class="brand_line"></span>
+
+                <p class="brand_hover">
+                    바른 원칙에서 시작해,<br>
+                    타협하지 않는 정직함을 지킵니다.
+                </p>
+
+            </li>
+
+
+            <!-- Mild -->
+            <li data-aos="fade-up" data-aos-delay="1000">
+
+                <img class="img_default" src="./images/main/main_banner/brand/hover2.png" alt="Mild">
+
+                <img class="img_hover" src="./images/main/main_banner/brand/mild.png" alt="Mild">
+
+                <p class="brand_title">
+                    <span class="brand_eng">Mild</span>
+                    <br>
+                    <span class="brand_nove">Nove</span>
+                    <span class="brand_kor">의 방식</span>
+                </p>
+
+                <span class="brand_line"></span>
+
+                <p class="brand_hover">
+                    부담은 덜고,<br>
+                    매일의 케어를 편안하게 이어갑니다.
+                </p>
+
+            </li>
+
+
+            <!-- Trust -->
+            <li data-aos="fade-up" data-aos-delay="1500">
+
+                <img class="img_default" src="./images/main/main_banner/brand/hover3.png" alt="Trust">
+
+                <img class="img_hover" src="./images/main/main_banner/brand/trust.png" alt="Trust">
+
+                <p class="brand_title">
+                    <span class="brand_eng">Trust</span>
+                    <br>
+                    <span class="brand_nove">Nove</span>
+                    <span class="brand_kor">의 완성</span>
+                </p>
+
+                <span class="brand_line"></span>
+
+                <p class="brand_hover">
+                    꾸준한 마음으로,<br>
+                    피부와의 약속을 지킵니다.
+                </p>
+
+            </li>
+
+        </ul>
+
+    </div>
+    <!-- brand 소개 -->
+
+
+
+    <!-- best_item -->
+    <section id="best">
+
+        <h2 class="title">BEST ITEM</h2>
+
+        <ul class="best_list" data-aos="fade-up">
+
+            <!-- 01 -->
+            <li class="best_item">
+                <a href="./shop.html">
+                    <div class="best_img">
+                        <img class="img_default" src="./images/main/main_banner/best/foam.png" alt="데일리 오트 약산성 버블폼">
+
+                        <img class="img_hover" src="./images/main/main_banner/best/foam_hover.png" alt="데일리 오트 약산성 버블폼">
+                    </div>
+
+                    <div class="best_info">
+                        <p class="best_name">데일리 오트 약산성 버블폼</p>
+
+                        <p class="best_price">
+                            <span>12%</span>
+                            <del class="original_price">24,900원</del>
+                            <strong>21,900원</strong>
+                        </p>
+                    </div>
+                </a>
+            </li>
+
+
+            <!-- 02 -->
+            <li class="best_item">
+                <a href="#">
+                    <div class="best_img">
+                        <img class="img_default" src="./images/main/main_banner/best/toner.png" alt="데일리 오트 안개 미스트 토너">
+
+                        <img class="img_hover" src="./images/main/main_banner/best/toner_hover.png"
+                            alt="데일리 오트 안개 미스트 토너">
+                    </div>
+
+                    <div class="best_info">
+                        <p class="best_name">데일리 오트 안개 미스트 토너</p>
+
+                        <p class="best_price">
+                            <span>12%</span>
+                            <del class="original_price">26,000원</del>
+                            <strong>22,900원</strong>
+                        </p>
+                    </div>
+                </a>
+            </li>
+
+
+            <!-- 03 -->
+            <li class="best_item">
+                <a href="#">
+                    <div class="best_img">
+                        <img class="img_default" src="./images/main/main_banner/best/mug_foam.png" alt="리커버리 쑥 약산성 버블폼">
+
+                        <img class="img_hover" src="./images/main/main_banner/best/mugfoam_hover.png"
+                            alt="리커버리 쑥 약산성 버블폼">
+                    </div>
+
+                    <div class="best_info">
+                        <p class="best_name">리커버리 쑥 약산성 버블폼</p>
+
+                        <p class="best_price">
+                            <span>12%</span>
+                            <del class="original_price">24,900원</del>
+                            <strong>21,900원</strong>
+                        </p>
+                    </div>
+                </a>
+            </li>
+
+
+            <!-- 04 -->
+            <li class="best_item">
+                <a href="#">
+                    <div class="best_img">
+                        <img class="img_default" src="./images/main/main_banner/best/stick.png" alt="블루베리 마일드 선스틱">
+
+                        <img class="img_hover" src="./images/main/main_banner/best/stick_hover.png" alt="블루베리 마일드 선스틱">
+                    </div>
+
+                    <div class="best_info">
+                        <p class="best_name">블루베리 마일드 선스틱</p>
+
+                        <p class="best_price">
+                            <span>12%</span>
+                            <del class="original_price">24,900원</del>
+                            <strong>21,900원</strong>
+                        </p>
+                    </div>
+                </a>
+            </li>
+
+        </ul>
+
+    </section>
+    <!-- best_item -->
+
+
+    <!-- line_banner -->
+    <div id="banner">
+
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                    · Gentle Care, Every Day · Honest Ingredients · Mild Formula
+                </div>
+                <div class="swiper-slide">
+                    · Gentle Care, Every Day · Honest Ingredients · Mild Formula
+                </div>
+                <div class="swiper-slide">
+                    · Gentle Care, Every Day · Honest Ingredients · Mild Formula
+                </div>
+                <div class="swiper-slide">
+                    · Gentle Care, Every Day · Honest Ingredients · Mild Formula
+                </div>
+                <div class="swiper-slide">
+                    · Gentle Care, Every Day · Honest Ingredients · Mild Formula
+                </div>
+                <div class="swiper-slide">
+                    · Gentle Care, Every Day · Honest Ingredients · Mild Formula
+                </div>
+                <div class="swiper-slide">
+                    · Gentle Care, Every Day · Honest Ingredients · Mild Formula
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper("#banner .mySwiper", {
+            slidesPerView: "auto",
+            spaceBetween: 10,
+            loop: true,
+
+            allowTouchMove: false,
+
+            autoplay: {
+                delay: 0,
+                disableOnInteraction: false,
+            },
+
+            speed: 15000,
+
+            freeMode: true,
+            freeModeMomentum: false,
+        });
+    </script>
+    <!-- line_banner -->
+
+
+    <!-- event -->
+    <section id="event">
+
+        <h2 class="title">EVENT</h2>
+
+        <ul class="event_list">
+
+            <li class="event_item" data-aos="zoom-in" data-aos-delay="0">
+                <a href="#">
+                    <div class="event_img">
+                        <img src="./images/main/main_banner/event/welcome.png" alt="신규가입">
+                    </div>
+
+                    <div class="event_info">
+                        <p class="event_name">신규가입 혜택 안내</p>
+                        <p class="event_benefit">첫 구매 헤택</p>
+                    </div>
+                </a>
+            </li>
+
+            <li class="event_item" data-aos="zoom-in" data-aos-delay="150">
+                <a href="#">
+                    <div class="event_img">
+                        <img src="./images/main/main_banner/event/membership.png" alt="멤버십">
+                    </div>
+
+                    <div class="event_info">
+                        <p class="event_name">회원등급별 혜택 안내</p>
+                        <p class="event_benefit">멤버십 혜택</p>
+                    </div>
+                </a>
+            </li>
+
+            <li class="event_item" data-aos="zoom-in" data-aos-delay="300">
+                <a href="#">
+                    <div class="event_img">
+                        <img src="./images/main/main_banner/event/review.png" alt="리뷰">
+                    </div>
+
+                    <div class="event_info">
+                        <p class="event_name">자사몰 리뷰 작성 리워드 안내</p>
+                        <p class="event_benefit">적립금 최대 2,000P 지급</p>
+                    </div>
+                </a>
+            </li>
+
+        </ul>
+
+    </section>
+    <!-- event -->
+
+
+    <!-- review -->
+    <section id="review">
+
+        <div class="review_sticky">
+
+            <!-- REVIEW 배경 -->
+            <div class="review_bg">
+                <img src="./images/main/main_banner/review/review_bg.png" alt="">
+            </div>
+
+            <!-- REVIEW 타이틀 -->
+            <h2 class="review_title">
+                <span class="review_r">R</span><span class="review_eview">eview</span>
+            </h2>
+
+
+            <!-- 왼쪽 리뷰 -->
+            <div class="review_motion review_motion_left" data-aos="fade-up" data-aos-duration="1200"
+                data-aos-easing="ease-out" data-aos-once="true">
+
+                <div class="review_column review_left">
+
+                    <div class="review_card">
+                        <img src="./images/main/main_banner/review/review1.png" alt="리뷰 이미지">
+
+                        <div class="review_info">
+                            <span class="review_star">★★★★★ 4.9</span>
+                            <strong>블루베리 마일드 선스틱</strong>
+                            <p>
+                                원래 선크림 잘 안 바르는 편인데, 이건 스틱이라 그냥 슥슥 바르면 되니까 손에 묻지도 않고, 야외에서 운동하다가 덧바르기도 편했어요. 햇빛에 노출된 부분이랑
+                                안 탄 부분의 차이가 생각보다 확실해서 좀 놀랐네요ㅋㅋ 앞으로는 좀 더 꼼꼼하게 •••
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="review_card">
+                        <img src="./images/main/main_banner/review/review2.png" alt="리뷰 이미지">
+
+                        <div class="review_info">
+                            <span class="review_star">★★★★★ 4.9</span>
+                            <strong>데일리 오트 약산성 버블폼</strong>
+                            <p>
+                                세안 후에도 피부가 당기지 않고, 붉은 트러블이 많이 진정됐어요.처음에는 볼 주변에 붉은 트러블이 꽤 올라와 있었는데, 꾸준히 사용하면서 눈에 띄게 편안해진
+                                느낌이에요. <br>
+                                거품이 부드럽고 풍성해서 피부를 세게 문지르지 않고 세 •••
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="review_card">
+                        <img src="./images/main/main_banner/review/review3.png" alt="리뷰 이미지">
+
+                        <div class="review_info">
+                            <span class="review_star">★★★★★ 4.8</span>
+                            <strong>리커버리 쑥 약산성 버블폼</strong>
+                            <p>
+                                피부가 예민한 날에도 편하게 사용할 수 있어서 좋아요. <br>
+                                요즘 피부 컨디션이 들쑥날쑥해서 순한 클렌저를 찾다가 사용해봤어요. 특히 피부가 예민한 날에는 세안 후에 얼굴이 쉽게 붉어지고 따끔했는데, 이건 씻어낸 뒤에도
+                                피부가 편안한 느낌 •••
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!-- 오른쪽 리뷰 -->
+            <div class="review_motion review_motion_right" data-aos="fade-down" data-aos-duration="1200"
+                data-aos-easing="ease-out" data-aos-once="true">
+
+                <div class="review_column review_right">
+
+                    <div class="review_card">
+                        <img src="./images/main/main_banner/review/review4.png" alt="리뷰 이미지">
+
+                        <div class="review_info">
+                            <span class="review_star">★★★★★ 4.8</span>
+                            <strong>블루베리 마일드 선크림</strong>
+                            <p>
+                                매일 바르기 부담 없는 선크림이라 요즘 이것만 써요. <br>
+                                선크림은 답답하거나 끈적이는 느낌 때문에 잘 안 바르게 되는데, 이건 생각보다 가볍게 발려서 좋았어요. 피부에 겉도는 느낌이 적어서 아침에 스킨케어 마지막에
+                                바르기 편했어요. 피 •••
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="review_card">
+                        <img src="./images/main/main_banner/review/review5.png" alt="리뷰 이미지">
+
+                        <div class="review_info">
+                            <span class="review_star">★★★★★ 4.9</span>
+                            <strong>리커버리 쑥 장벽 크림</strong>
+                            <p>
+                                부드럽게 펴 발리고, 피부가 편안하게 촉촉해져요. <br>
+                                크림이 무겁지 않고 부드럽게 펴 발려서 피부에 부담 없이 사용할 수 있었어요. <br>
+                                흡수된 후에도 건조함 없이 촉촉함이 오래 남아서, 예민 •••
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="review_card">
+                        <img src="./images/main/main_banner/review/review6.png" alt="리뷰 이미지">
+
+                        <div class="review_info">
+                            <span class="review_star">★★★★★ 5.0</span>
+                            <strong>데일리 오트 안개 미스트 토너</strong>
+                            <p>
+                                회사에서 하루 종일 에어컨을 틀어놓다 보니 오후만 되면 피부가 금방 건조해지는 편이에요. 그래서 책상 한쪽에 두고 있다가 피부가 건조하다 싶을 때마다 수시로
+                                뿌려주고 있어요. <br>
+                                안개 분사라 가볍게 촉촉해지는 느낌이라 메이크업 전후 •••
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- review -->
+
+
+    <!-- insta -->
+    <section id="instagram">
+
+        <h2 class="title">INSTAGRAM</h2>
+
+        <div class="instagram_wrap">
+            <div class="instagram_track">
+
+                <!-- 1세트 -->
+                <div class="instagram_group">
+
+                    <div class="instagram_item item01">
+                        <video src="./images/main/main_banner/insta/1.mp4" autoplay muted loop playsinline></video>
+                    </div>
+
+                    <div class="instagram_item item02">
+                        <img src="./images/main/main_banner/insta/2.png" alt="2">
+                    </div>
+
+                    <div class="instagram_item item03">
+                        <img src="./images/main/main_banner/insta/3.png" alt="3">
+                    </div>
+
+                    <div class="instagram_item item04">
+                        <img src="./images/main/main_banner/insta/4.png" alt="4">
+                    </div>
+
+                    <div class="instagram_item item05">
+                        <img src="./images/main/main_banner/insta/5.png" alt="5">
+                    </div>
+
+                    <div class="instagram_item item06">
+                        <img src="./images/main/main_banner/insta/6.png" alt="6">
+                    </div>
+
+                    <div class="instagram_item item07">
+                        <img src="./images/main/main_banner/insta/7.png" alt="7">
+                    </div>
+
+                    <div class="instagram_item item08">
+                        <img src="./images/main/main_banner/insta/8.png" alt="8">
+                    </div>
+
+                    <div class="instagram_item item09">
+                        <img src="./images/main/main_banner/insta/9.png" alt="9">
+                    </div>
+
+                    <div class="instagram_item item10">
+                        <img src="./images/main/main_banner/insta/10.png" alt="10">
+                    </div>
+
+                    <div class="instagram_item item11">
+                        <img src="./images/main/main_banner/insta/11.png" alt="11">
+                    </div>
+
+                    <div class="instagram_item item12">
+                        <video src="./images/main/main_banner/insta/12.mp4" autoplay muted loop playsinline></video>
+                    </div>
+
+                    <div class="instagram_item item13">
+                        <img src="./images/main/main_banner/insta/13.png" alt="13">
+                    </div>
+
+                    <div class="instagram_item item15">
+                        <video src="./images/main/main_banner/insta/14.mp4" autoplay muted loop playsinline></video>
+                    </div>
+
+                    <div class="instagram_item item14">
+                        <img src="./images/main/main_banner/insta/15.png" alt="15">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- insta -->
+
+
+
+
+    <!-- notice -->
+    <section id="notice">
+        <div class="notice_noise"></div>
+
+        <div class="notice_inner" data-aos="fade-up" data-aos-duration="1000">
+
+            <h2 class="title">NOTICE</h2>
+
+            <div class="notice_table">
+
+                <div class="notice_row notice_head">
+                    <div class="notice_num">번호</div>
+                    <div class="notice_subject">제목</div>
+                    <div class="notice_date">작성자</div>
+                </div>
+
+                <a href="#" class="notice_row notice_important">
+                    <div class="notice_num">공지</div>
+                    <div class="notice_subject">
+                        <p>🎄크리스마스 EVENT 안내🎄</p>
+                    </div>
+                    <div class="notice_date">노브</div>
+                </a>
+
+                <a href="#" class="notice_row">
+                    <div class="notice_num">4</div>
+                    <div class="notice_subject">
+                        <p>🖤블랙 프라이데이 EVENT 안내🖤</p>
+                    </div>
+                    <div class="notice_date">노브</div>
+                </a>
+
+                <a href="#" class="notice_row">
+                    <div class="notice_num">3</div>
+                    <div class="notice_subject">
+                        <p>배송 및 고객센터 운영 안내</p>
+                    </div>
+                    <div class="notice_date">노브</div>
+                </a>
+
+                <a href="#" class="notice_row">
+                    <div class="notice_num">2</div>
+                    <div class="notice_subject">
+                        <p>회원탈퇴 유의사항</p>
+                    </div>
+                    <div class="notice_date">노브</div>
+                </a>
+
+                <a href="#" class="notice_row">
+                    <div class="notice_num">1</div>
+                    <div class="notice_subject">
+                        <p>제품 사용 및 보관 안내</p>
+                    </div>
+                    <div class="notice_date">노브</div>
+                </a>
+
+            </div>
+
+        </div>
+    </section>
+    <!-- notice -->
+
+
+
+
+
+    <!-- footer -->
+    <section id="footer">
+
+        <div class="footer_wrap">
+
+            <div class="footer_inner">
+
+                <!-- logo -->
+                <h1 class="logo">
+                    <a href="#">
+                        <img src="./images/footer_logo.svg" alt="Nove">
+                    </a>
+                </h1>
+
+                <!-- footer info -->
+                <div class="footer_info">
+
+                    <!-- 회사소개 -->
+                    <div class="footer_company">
+                        <h3>회사소개</h3>
+
+                        <p>
+                            (주) 노브<br>
+                            대표 송미진<br>
+                            이메일 nove@nove.com
+                        </p>
+                    </div>
+
+                    <!-- 고객센터 -->
+                    <div class="footer_customer">
+                        <h3>고객센터</h3>
+
+                        <p>
+                            1551-4721<br>
+                            평일 09:00 - 18:00<br>
+                            점심시간 12:30 - 13:30<br>
+                            토·일 및 공휴일 휴무
+                        </p>
+
+                        <div class="footer_links">
+                            <a href="#">이용약관</a>
+                            <a href="#">개인정보처리방침</a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- footer -->
+
+
+    <!-- TOP 버튼 -->
+    <button type="button" class="top_btn">TOP</button>
+
+    <script>
+        const topBtn = document.querySelector('.top_btn');
+
+        topBtn.addEventListener('click', function () {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+
+
+
+
+    <!-- 제이쿼리 오픈소스 연결 -->
+    <script src="js/jquery-4.0.0.min.js"></script>
+
+    <!-- 제이쿼리 파일 연결 -->
+    <script src="js/script.js"></script>
+
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+    </script>
 </body>
 
 </html>
